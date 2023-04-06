@@ -8,13 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3.View
+namespace HTHTQLNH.View
 {
     public partial class HoaDon : Form
     {
         public HoaDon()
         {
             InitializeComponent();
+        }
+
+        private void HoaDon_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMaNhanVien_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
