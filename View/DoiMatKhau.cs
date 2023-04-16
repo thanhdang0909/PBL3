@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnPBL3.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,9 @@ namespace DoAnPBL3
         public DoiMatKhau()
         {
             InitializeComponent();
+            txtTendangnhap.Text = QLTKBLL.Instance.tenDangNhap;
         }
-
-        private void btnThoatt_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -56,6 +54,19 @@ namespace DoAnPBL3
             {
                 txtMK2.PasswordChar = '*';
             }
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+                string MKCu = txtMK1.Text;
+                string MKMoi = txtMK2.Text;
+                string MKMoiNhapLai = txtMK3.Text;
+                QLTKBLL.Instance.SetPassWord(MKCu, MKMoi,MKMoiNhapLai);
+        }
+
+        private void btnThoatt_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

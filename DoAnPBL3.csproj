@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\QLBABLL.cs" />
+    <Compile Include="BLL\QLHD.cs" />
     <Compile Include="BLL\QLKHBLL.cs" />
     <Compile Include="BLL\QLCLVBLL.cs" />
     <Compile Include="BLL\QLTKBLL.cs" />

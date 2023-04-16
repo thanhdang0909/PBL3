@@ -38,7 +38,7 @@ namespace DoAnPBL3.View
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 }
