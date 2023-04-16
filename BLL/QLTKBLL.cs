@@ -39,7 +39,7 @@ namespace DoAnPBL3.BLL
             }
         }
 
-        public NHANVIEN GetNVByTDN()
+        public NHANVIEN GetUserByTDN()
         {
             QLNH_DB db = new QLNH_DB();
             var NV = db.NHANVIENs.Where(p => p.SDT == _tenDangNhap).FirstOrDefault();

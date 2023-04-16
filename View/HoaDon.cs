@@ -32,5 +32,7 @@ namespace DoAnPBL3
         {
            ShowForminPanel(new ChiTietHoaDon());
         }
+
+       
     }
 }

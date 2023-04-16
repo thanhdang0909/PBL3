@@ -32,7 +32,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenDN = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTenNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTenND = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaTK = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,26 +85,26 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "Tên đăng nhập";
             // 
-            // txtTenNV
+            // txtTenND
             // 
-            this.txtTenNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenNV.DefaultText = "";
-            this.txtTenNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNV.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNV.ForeColor = System.Drawing.Color.Black;
-            this.txtTenNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNV.Location = new System.Drawing.Point(243, 223);
-            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.PasswordChar = '\0';
-            this.txtTenNV.PlaceholderText = "";
-            this.txtTenNV.SelectedText = "";
-            this.txtTenNV.Size = new System.Drawing.Size(222, 32);
-            this.txtTenNV.TabIndex = 45;
+            this.txtTenND.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenND.DefaultText = "";
+            this.txtTenND.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenND.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenND.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenND.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenND.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenND.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenND.ForeColor = System.Drawing.Color.Black;
+            this.txtTenND.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenND.Location = new System.Drawing.Point(243, 223);
+            this.txtTenND.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTenND.Name = "txtTenND";
+            this.txtTenND.PasswordChar = '\0';
+            this.txtTenND.PlaceholderText = "";
+            this.txtTenND.SelectedText = "";
+            this.txtTenND.Size = new System.Drawing.Size(222, 32);
+            this.txtTenND.TabIndex = 45;
             // 
             // label1
             // 
@@ -112,9 +112,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 223);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(162, 25);
             this.label1.TabIndex = 44;
-            this.label1.Text = "Tên nhân viên";
+            this.label1.Text = "Tên người dùng";
             // 
             // txtMaTK
             // 
@@ -228,7 +228,7 @@
             this.btnThoatt.TextOffset = new System.Drawing.Point(8, 0);
             this.btnThoatt.Click += new System.EventHandler(this.btnThoatt_Click);
             // 
-            // ThongTinTaiKhoan
+            // ThongTinTaiKhoanNV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -240,13 +240,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMaTK);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTenNV);
+            this.Controls.Add(this.txtTenND);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenDN);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ThongTinTaiKhoan";
+            this.Name = "ThongTinTaiKhoanNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ThongTinTaiKhoan";
             this.ResumeLayout(false);
@@ -259,7 +259,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtTenDN;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtTenNV;
+        private Guna.UI2.WinForms.Guna2TextBox txtTenND;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtMaTK;
         private System.Windows.Forms.Label label2;

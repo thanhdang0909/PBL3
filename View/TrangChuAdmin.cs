@@ -37,19 +37,12 @@ namespace DoAnPBL3
 
         private void btnTTTK_Click(object sender, EventArgs e)
         {
-            ShowForminPanel(new ThongTinTaiKhoanAdmin());
+            ShowForminPanel(new ThongTinTaiKhoan());
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+           Application.Exit();
         }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
-       
     }
 }

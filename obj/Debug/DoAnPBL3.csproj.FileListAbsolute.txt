@@ -84,8 +84,6 @@ D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThemMonAn.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeThucDon.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongTinTaiKhoanAdmin.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.TrangMieng.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.UI.resources
@@ -98,3 +96,4 @@ D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.CopyComplete
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.exe
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.pdb
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources

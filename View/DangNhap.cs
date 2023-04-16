@@ -62,7 +62,6 @@ namespace DoAnPBL3.View
             if (Check())
             {
                 QLTKBLL.Instance.tenDangNhap = txtTendangnhap.Text; 
-                QLTKBLL.Instance.tenDangNhap = txtTendangnhap.Text;
                 QLTKBLL.Instance.DangNhap(txtTendangnhap.Text, txtMatkhau.Text, rdoQuanly.Checked);
             }
         }
