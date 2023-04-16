@@ -37,7 +37,57 @@ namespace DoAnPBL3.BLL
                 }
 
             }
+        }
 
+        public NHANVIEN GetNVByTDN()
+        {
+            QLNH_DB db = new QLNH_DB();
+            var NV = db.NHANVIENs.Where(p => p.SDT == _tenDangNhap).FirstOrDefault();
+            return NV;
+        }
+
+        public void UpdateTTTK(string maTK, string tenDN, string tenNV, string diaChi)
+        {
+            QLNH_DB db = new QLNH_DB();
+            TAIKHOAN taiKhoan = db.TAIKHOANs.Find(maTK);
+            taiKhoan.tenDangNhap = tenDN;
+            var nhanVien = db.NHANVIENs.Where(p => p.maTK == maTK).FirstOrDefault();
+            nhanVien.tenNV = tenNV;
+            nhanVien.SDT = tenDN;
+            nhanVien.diaChi = diaChi;
+            _tenDangNhap = tenDN;
+            db.SaveChanges();
+            MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public bool Check(string MKCu, string MKMoi, string MKMoiNhapLai)
+        {
+            QLNH_DB db = new QLNH_DB();
+            var taiKhoan = db.TAIKHOANs.Where(p => p.tenDangNhap == _tenDangNhap).FirstOrDefault();
+            if (taiKhoan.matKhau != MKCu)
+            {
+                MessageBox.Show("Nhập sai mật khẩu cũ","Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }    
+                
+            if (MKMoi != MKMoiNhapLai)
+            {
+                MessageBox.Show("Nhập lại mật khẩu mới không đúng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }    
+                
+            return true;
+        }
+        public void SetPassWord(string MKCu, string MKMoi, string MKMoiNhapLai)
+        {
+            QLNH_DB db = new QLNH_DB();
+            if(Check(MKCu,MKMoi,MKMoiNhapLai))
+            {
+                var taiKhoan = db.TAIKHOANs.Where(p => p.tenDangNhap == _tenDangNhap).FirstOrDefault();
+                taiKhoan.matKhau = MKMoi;
+                db.SaveChanges();
+                MessageBox.Show("Thay đổi mật khẩu thành công!","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }    
         }
     }
 }
