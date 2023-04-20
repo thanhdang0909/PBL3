@@ -17,53 +17,45 @@ namespace DoAnPBL3.View
         {
             InitializeComponent();
         }
-
-        private void btnThoat_Click(object sender, EventArgs e)
+        public bool CheckDN()
         {
-            this.Dispose(); 
-        }
-
-        private void picEye_Click(object sender, EventArgs e)
-        {
-            if (txtMatkhau.PasswordChar == '*')
+            if (txtTendangnhap.Text == "" && txtMatkhau.Text == "")
             {
-                txtMatkhau.PasswordChar = '\0';
-            }
-            else
-            {
-                txtMatkhau.PasswordChar = '*';
-            }
-        }
-
-       public bool Check()
-        {
-            if(txtTendangnhap.Text == "")
-            {
-                MessageBox.Show("Bạn chưa nhập tên đăng nhập","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtTendangnhap.Focus();
+                MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
-            if(txtMatkhau.Text == "")
+
+            else if (txtMatkhau.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMatkhau.Focus();
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
-            }    
-            if(rdoNhanvien.Checked == false && rdoQuanly.Checked == false)
+            }
+            else if (txtTendangnhap.Text == "")
             {
-                MessageBox.Show("Bạn chưa chọn quyền đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                rdoQuanly.Focus();
+                MessageBox.Show("Vui lòng nhập tên đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
-            }    
+            }
+            if (rdoQuanly.Checked == false && rdoNhanvien.Checked == false)
+            {
+                MessageBox.Show("Bạn chưa chọn quyền đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
             return true;
         }
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            if (Check())
-            {
-                QLTKBLL.Instance.tenDangNhap = txtTendangnhap.Text; 
-                QLTKBLL.Instance.DangNhap(txtTendangnhap.Text, txtMatkhau.Text, rdoQuanly.Checked);
-            }
+            string tendangnhap = txtTendangnhap.Text;
+            string matkhau = txtMatkhau.Text;
+            bool vaitro = true;
+            if (rdoQuanly.Checked) vaitro = true;
+            else if (rdoNhanvien.Checked) vaitro = false;
+            if(CheckDN()) QLTKBLL.Instance.DangNhap(tendangnhap, matkhau, vaitro);
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -73,5 +65,7 @@ namespace DoAnPBL3.View
             rdoNhanvien.Checked = false;
             rdoQuanly.Checked = false;
         }
+
+     
     }
 }

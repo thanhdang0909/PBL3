@@ -34,6 +34,7 @@ namespace DoAnPBL3.DTO
         public virtual DbSet<LOAIMON> LOAIMONs { get; set; }
         public virtual DbSet<MONAN> MONANs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }

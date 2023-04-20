@@ -66,7 +66,7 @@
     <Property Name="tenKH" Type="nvarchar(max)" Nullable="false" />
     <Property Name="SDT" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="gioiTinh" Type="bit" Nullable="false" />
-    <Property Name="diaChi" Type="nvarchar(max)" />
+    <Property Name="diaChi" Type="nvarchar(max)" Nullable="false" />
     <Property Name="diemTichLuy" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="LOAIMON">
@@ -74,7 +74,7 @@
       <PropertyRef Name="maLM" />
     </Key>
     <Property Name="maLM" Type="char" MaxLength="5" Nullable="false" />
-    <Property Name="tenLM" Type="nvarchar" MaxLength="50" />
+    <Property Name="tenLM" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="MONAN">
     <Key>
@@ -85,7 +85,7 @@
     <Property Name="maLM" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="GiaMA" Type="money" Nullable="false" />
     <Property Name="donViTinh" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="AnhMA" Type="image" />
+    <Property Name="AnhMA" Type="image" Nullable="false" />
   </EntityType>
   <EntityType Name="NHANVIEN">
     <Key>
@@ -94,7 +94,7 @@
     <Property Name="maNV" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="maTK" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="tenNV" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="gioiTinh" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="gioiTinh" Type="bit" Nullable="false" />
     <Property Name="ngaySinh" Type="smalldatetime" Nullable="false" />
     <Property Name="CCCD" Type="char" MaxLength="12" Nullable="false" />
     <Property Name="SDT" Type="varchar" MaxLength="10" Nullable="false" />
@@ -108,6 +108,16 @@
     </Key>
     <Property Name="maCT" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="maTK" Type="char" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="TAIKHOAN">
     <Key>
@@ -274,6 +284,7 @@
     <EntitySet Name="MONAN" EntityType="Self.MONAN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PHANCONGCALAM" EntityType="Self.PHANCONGCALAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_BANPHUCVU_KHACHHANG" Association="Self.FK_BANPHUCVU_KHACHHANG">
       <End Role="KHACHHANG" EntitySet="KHACHHANG" />

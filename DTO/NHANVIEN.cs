@@ -17,7 +17,7 @@ namespace DoAnPBL3.DTO
         public string maNV { get; set; }
         public string maTK { get; set; }
         public string tenNV { get; set; }
-        public string gioiTinh { get; set; }
+        public bool gioiTinh { get; set; }
         public System.DateTime ngaySinh { get; set; }
         public string CCCD { get; set; }
         public string SDT { get; set; }

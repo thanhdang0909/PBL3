@@ -46,8 +46,8 @@
     <Property Name="gioBatDau" Type="Time" Nullable="false" Precision="7" />
     <Property Name="gioKetThuc" Type="Time" Nullable="false" Precision="7" />
     <Property Name="trangThai" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="TAIKHOANs" Relationship="Self.PHANCONGCALAM" FromRole="CHITIETCALAM" ToRole="TAIKHOAN" />
     <Property Name="soLuong" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TAIKHOANs" Relationship="Self.PHANCONGCALAM" FromRole="CHITIETCALAM" ToRole="TAIKHOAN" />
   </EntityType>
   <EntityType Name="HOADON">
     <Key>
@@ -69,16 +69,16 @@
     <Property Name="tenKH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SDT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
-    <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="KHACHHANG" ToRole="BANPHUCVU" />
+    <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="diemTichLuy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="KHACHHANG" ToRole="BANPHUCVU" />
   </EntityType>
   <EntityType Name="LOAIMON">
     <Key>
       <PropertyRef Name="maLM" />
     </Key>
     <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="MONANs" Relationship="Self.FK_MONAN_LOAIMON" FromRole="LOAIMON" ToRole="MONAN" />
   </EntityType>
   <EntityType Name="MONAN">
@@ -90,7 +90,7 @@
     <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="GiaMA" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="donViTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
     <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="MONAN" ToRole="CHITIETBANPHUCVU" />
     <NavigationProperty Name="LOAIMON" Relationship="Self.FK_MONAN_LOAIMON" FromRole="MONAN" ToRole="LOAIMON" />
   </EntityType>
@@ -101,13 +101,23 @@
     <Property Name="maNV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="tenNV" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="gioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
     <Property Name="ngaySinh" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="diaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="luong" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_NHANVIEN_TAIKHOAN" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="TAIKHOAN">
     <Key>
@@ -236,6 +246,7 @@
     <EntitySet Name="LOAIMONs" EntityType="Self.LOAIMON" />
     <EntitySet Name="MONANs" EntityType="Self.MONAN" />
     <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
     <AssociationSet Name="FK_BANPHUCVU_KHACHHANG" Association="Self.FK_BANPHUCVU_KHACHHANG">
       <End Role="KHACHHANG" EntitySet="KHACHHANGs" />

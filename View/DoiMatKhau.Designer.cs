@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
-            this.btnThoatt = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtMK3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMK2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMK1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNhaplaimatkhau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMatkhaumoi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMatkhaucu = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,27 +53,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnThoatt
+            // btnThoat
             // 
-            this.btnThoatt.BorderRadius = 15;
-            this.btnThoatt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoatt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoatt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThoatt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThoatt.FillColor = System.Drawing.Color.DarkSalmon;
-            this.btnThoatt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoatt.ForeColor = System.Drawing.Color.Black;
-            this.btnThoatt.Image = ((System.Drawing.Image)(resources.GetObject("btnThoatt.Image")));
-            this.btnThoatt.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThoatt.ImageSize = new System.Drawing.Size(37, 37);
-            this.btnThoatt.Location = new System.Drawing.Point(444, 578);
-            this.btnThoatt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThoatt.Name = "btnThoatt";
-            this.btnThoatt.Size = new System.Drawing.Size(166, 54);
-            this.btnThoatt.TabIndex = 93;
-            this.btnThoatt.Text = "Thoát";
-            this.btnThoatt.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnThoatt.Click += new System.EventHandler(this.btnThoatt_Click);
+            this.btnThoat.BorderRadius = 15;
+            this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThoat.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThoat.ImageSize = new System.Drawing.Size(37, 37);
+            this.btnThoat.Location = new System.Drawing.Point(395, 462);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(148, 43);
+            this.btnThoat.TabIndex = 93;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnThoat.Click += new System.EventHandler(this.btnThoatt_Click);
             // 
             // btnDoiMK
             // 
@@ -89,10 +89,10 @@
             this.btnDoiMK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDoiMK.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnDoiMK.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnDoiMK.Location = new System.Drawing.Point(172, 578);
+            this.btnDoiMK.Location = new System.Drawing.Point(153, 462);
             this.btnDoiMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(166, 54);
+            this.btnDoiMK.Size = new System.Drawing.Size(148, 43);
             this.btnDoiMK.TabIndex = 92;
             this.btnDoiMK.Text = "Cập nhật";
             this.btnDoiMK.TextOffset = new System.Drawing.Point(20, 0);
@@ -103,88 +103,88 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Tomato;
-            this.label5.Location = new System.Drawing.Point(302, 189);
+            this.label5.Location = new System.Drawing.Point(268, 151);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(223, 41);
+            this.label5.Size = new System.Drawing.Size(185, 35);
             this.label5.TabIndex = 91;
             this.label5.Text = "Đổi mật khẩu";
             // 
-            // txtMK3
+            // txtNhaplaimatkhau
             // 
-            this.txtMK3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMK3.DefaultText = "";
-            this.txtMK3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMK3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMK3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK3.ForeColor = System.Drawing.Color.Black;
-            this.txtMK3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK3.Location = new System.Drawing.Point(359, 482);
-            this.txtMK3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMK3.MaxLength = 6;
-            this.txtMK3.Name = "txtMK3";
-            this.txtMK3.PasswordChar = '*';
-            this.txtMK3.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMK3.PlaceholderText = "";
-            this.txtMK3.SelectedText = "";
-            this.txtMK3.Size = new System.Drawing.Size(295, 38);
-            this.txtMK3.TabIndex = 90;
+            this.txtNhaplaimatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNhaplaimatkhau.DefaultText = "";
+            this.txtNhaplaimatkhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNhaplaimatkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNhaplaimatkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhaplaimatkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhaplaimatkhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhaplaimatkhau.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNhaplaimatkhau.ForeColor = System.Drawing.Color.Black;
+            this.txtNhaplaimatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhaplaimatkhau.Location = new System.Drawing.Point(319, 386);
+            this.txtNhaplaimatkhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNhaplaimatkhau.MaxLength = 6;
+            this.txtNhaplaimatkhau.Name = "txtNhaplaimatkhau";
+            this.txtNhaplaimatkhau.PasswordChar = '*';
+            this.txtNhaplaimatkhau.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtNhaplaimatkhau.PlaceholderText = "";
+            this.txtNhaplaimatkhau.SelectedText = "";
+            this.txtNhaplaimatkhau.Size = new System.Drawing.Size(262, 30);
+            this.txtNhaplaimatkhau.TabIndex = 90;
             // 
-            // txtMK2
+            // txtMatkhaumoi
             // 
-            this.txtMK2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMK2.DefaultText = "";
-            this.txtMK2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMK2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMK2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK2.ForeColor = System.Drawing.Color.Black;
-            this.txtMK2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK2.Location = new System.Drawing.Point(359, 418);
-            this.txtMK2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMK2.MaxLength = 6;
-            this.txtMK2.Name = "txtMK2";
-            this.txtMK2.PasswordChar = '*';
-            this.txtMK2.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMK2.PlaceholderText = "";
-            this.txtMK2.SelectedText = "";
-            this.txtMK2.Size = new System.Drawing.Size(295, 38);
-            this.txtMK2.TabIndex = 89;
+            this.txtMatkhaumoi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatkhaumoi.DefaultText = "";
+            this.txtMatkhaumoi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatkhaumoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatkhaumoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhaumoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhaumoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhaumoi.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatkhaumoi.ForeColor = System.Drawing.Color.Black;
+            this.txtMatkhaumoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhaumoi.Location = new System.Drawing.Point(319, 334);
+            this.txtMatkhaumoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatkhaumoi.MaxLength = 6;
+            this.txtMatkhaumoi.Name = "txtMatkhaumoi";
+            this.txtMatkhaumoi.PasswordChar = '*';
+            this.txtMatkhaumoi.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtMatkhaumoi.PlaceholderText = "";
+            this.txtMatkhaumoi.SelectedText = "";
+            this.txtMatkhaumoi.Size = new System.Drawing.Size(262, 30);
+            this.txtMatkhaumoi.TabIndex = 89;
             // 
-            // txtMK1
+            // txtMatkhaucu
             // 
-            this.txtMK1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMK1.DefaultText = "";
-            this.txtMK1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMK1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMK1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMK1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK1.ForeColor = System.Drawing.Color.Black;
-            this.txtMK1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK1.Location = new System.Drawing.Point(359, 352);
-            this.txtMK1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMK1.MaxLength = 6;
-            this.txtMK1.Name = "txtMK1";
-            this.txtMK1.PasswordChar = '*';
-            this.txtMK1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMK1.PlaceholderText = "";
-            this.txtMK1.SelectedText = "";
-            this.txtMK1.Size = new System.Drawing.Size(295, 38);
-            this.txtMK1.TabIndex = 88;
+            this.txtMatkhaucu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatkhaucu.DefaultText = "";
+            this.txtMatkhaucu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatkhaucu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatkhaucu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhaucu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhaucu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhaucu.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatkhaucu.ForeColor = System.Drawing.Color.Black;
+            this.txtMatkhaucu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhaucu.Location = new System.Drawing.Point(319, 282);
+            this.txtMatkhaucu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatkhaucu.MaxLength = 6;
+            this.txtMatkhaucu.Name = "txtMatkhaucu";
+            this.txtMatkhaucu.PasswordChar = '*';
+            this.txtMatkhaucu.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtMatkhaucu.PlaceholderText = "";
+            this.txtMatkhaucu.SelectedText = "";
+            this.txtMatkhaucu.Size = new System.Drawing.Size(262, 30);
+            this.txtMatkhaucu.TabIndex = 88;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(143, 288);
+            this.label4.Location = new System.Drawing.Point(127, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 25);
+            this.label4.Size = new System.Drawing.Size(132, 22);
             this.label4.TabIndex = 86;
             this.label4.Text = "Tên đăng nhập";
             // 
@@ -192,9 +192,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 482);
+            this.label3.Location = new System.Drawing.Point(127, 386);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(187, 25);
+            this.label3.Size = new System.Drawing.Size(161, 22);
             this.label3.TabIndex = 85;
             this.label3.Text = "Nhập lại mật khẩu";
             // 
@@ -202,9 +202,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(143, 418);
+            this.label2.Location = new System.Drawing.Point(127, 334);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 25);
+            this.label2.Size = new System.Drawing.Size(126, 22);
             this.label2.TabIndex = 84;
             this.label2.Text = "Mật khẩu mới";
             // 
@@ -212,9 +212,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 352);
+            this.label1.Location = new System.Drawing.Point(127, 282);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.Size = new System.Drawing.Size(114, 22);
             this.label1.TabIndex = 83;
             this.label1.Text = "Mật khẩu cũ";
             // 
@@ -228,7 +228,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(864, 44);
+            this.panel2.Size = new System.Drawing.Size(768, 35);
             this.panel2.TabIndex = 82;
             // 
             // guna2ControlBox2
@@ -237,10 +237,10 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(714, 2);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(635, 2);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 38);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(40, 30);
             this.guna2ControlBox2.TabIndex = 27;
             // 
             // guna2ControlBox3
@@ -250,10 +250,10 @@
             this.guna2ControlBox3.BorderColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(816, 2);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(725, 2);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 38);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(40, 30);
             this.guna2ControlBox3.TabIndex = 28;
             // 
             // guna2ControlBox1
@@ -262,20 +262,19 @@
             this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(765, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(680, 2);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 38);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(40, 30);
             this.guna2ControlBox1.TabIndex = 26;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(613, 424);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(545, 339);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 96;
             this.pictureBox2.TabStop = false;
@@ -285,10 +284,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(613, 359);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(545, 287);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
@@ -298,10 +296,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(613, 488);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(545, 390);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 28);
+            this.pictureBox3.Size = new System.Drawing.Size(33, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 98;
             this.pictureBox3.TabStop = false;
@@ -320,32 +317,32 @@
             this.txtTendangnhap.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTendangnhap.ForeColor = System.Drawing.Color.Black;
             this.txtTendangnhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTendangnhap.Location = new System.Drawing.Point(359, 288);
-            this.txtTendangnhap.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTendangnhap.Location = new System.Drawing.Point(319, 230);
+            this.txtTendangnhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTendangnhap.Name = "txtTendangnhap";
             this.txtTendangnhap.PasswordChar = '\0';
             this.txtTendangnhap.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtTendangnhap.PlaceholderText = "";
             this.txtTendangnhap.ReadOnly = true;
             this.txtTendangnhap.SelectedText = "";
-            this.txtTendangnhap.Size = new System.Drawing.Size(295, 38);
+            this.txtTendangnhap.Size = new System.Drawing.Size(262, 30);
             this.txtTendangnhap.TabIndex = 99;
             // 
             // DoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 800);
+            this.ClientSize = new System.Drawing.Size(768, 640);
             this.Controls.Add(this.txtTendangnhap);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnThoatt);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtMK3);
-            this.Controls.Add(this.txtMK2);
-            this.Controls.Add(this.txtMK1);
+            this.Controls.Add(this.txtNhaplaimatkhau);
+            this.Controls.Add(this.txtMatkhaumoi);
+            this.Controls.Add(this.txtMatkhaucu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -353,7 +350,6 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(299, 100);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
             this.panel2.ResumeLayout(false);
@@ -366,12 +362,12 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnThoatt;
+        private Guna.UI2.WinForms.Guna2Button btnThoat;
         private Guna.UI2.WinForms.Guna2Button btnDoiMK;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txtMK3;
-        private Guna.UI2.WinForms.Guna2TextBox txtMK2;
-        private Guna.UI2.WinForms.Guna2TextBox txtMK1;
+        private Guna.UI2.WinForms.Guna2TextBox txtNhaplaimatkhau;
+        private Guna.UI2.WinForms.Guna2TextBox txtMatkhaumoi;
+        private Guna.UI2.WinForms.Guna2TextBox txtMatkhaucu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

@@ -17,25 +17,25 @@ namespace DoAnPBL3.View
         public ThongTinTaiKhoan()
         {
             InitializeComponent();
-            ShowTTTK();
+            Show();
         }
 
-        public void ShowTTTK()
+        public void Show()
         {
             NHANVIEN nv = QLTKBLL.Instance.GetUserByTDN();
             txtMaTK.Text = nv.maTK;
-            txtTenDN.Text = nv.SDT;
-            txtTenND.Text = nv.tenNV;
-            txtDiaChi.Text = nv.diaChi;
+            txtTendangnhap.Text = nv.SDT;
+            txtTennguoidung.Text = nv.tenNV;
+            txtDiachi.Text = nv.diaChi;
         }
 
         private void btnCapnhat_Click(object sender, EventArgs e)
         {
-                string maTK = txtMaTK.Text;
-                string tenDN = txtTenDN.Text;
-                string tenNV = txtTenND.Text;
-                string diaChi = txtDiaChi.Text;
-                QLTKBLL.Instance.UpdateTTTK(maTK, tenDN, tenNV, diaChi);
+                //string maTK = txtMaTK.Text;
+                //string tenDN = txtTendangnhap.Text;
+                //string tenNV = txtTennguoidung.Text;
+                //string diaChi = txtDiachi.Text;
+                //QLTKBLL.Instance.UpdateTTTK(maTK, tenDN, tenNV, diaChi);
          }
 
         private void btnThoatt_Click(object sender, EventArgs e)

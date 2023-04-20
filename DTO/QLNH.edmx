@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="HTHTKDNHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="HTHTKDNHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BANAN">
           <Key>
             <PropertyRef Name="maBan" />
@@ -71,7 +71,7 @@
           <Property Name="tenKH" Type="nvarchar(max)" Nullable="false" />
           <Property Name="SDT" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="gioiTinh" Type="bit" Nullable="false" />
-          <Property Name="diaChi" Type="nvarchar(max)" />
+          <Property Name="diaChi" Type="nvarchar(max)" Nullable="false" />
           <Property Name="diemTichLuy" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LOAIMON">
@@ -79,7 +79,7 @@
             <PropertyRef Name="maLM" />
           </Key>
           <Property Name="maLM" Type="char" MaxLength="5" Nullable="false" />
-          <Property Name="tenLM" Type="nvarchar" MaxLength="50" />
+          <Property Name="tenLM" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="MONAN">
           <Key>
@@ -90,7 +90,7 @@
           <Property Name="maLM" Type="char" MaxLength="5" Nullable="false" />
           <Property Name="GiaMA" Type="money" Nullable="false" />
           <Property Name="donViTinh" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="AnhMA" Type="image" />
+          <Property Name="AnhMA" Type="image" Nullable="false" />
         </EntityType>
         <EntityType Name="NHANVIEN">
           <Key>
@@ -99,7 +99,7 @@
           <Property Name="maNV" Type="char" MaxLength="5" Nullable="false" />
           <Property Name="maTK" Type="char" MaxLength="5" Nullable="false" />
           <Property Name="tenNV" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="gioiTinh" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="gioiTinh" Type="bit" Nullable="false" />
           <Property Name="ngaySinh" Type="smalldatetime" Nullable="false" />
           <Property Name="CCCD" Type="char" MaxLength="12" Nullable="false" />
           <Property Name="SDT" Type="varchar" MaxLength="10" Nullable="false" />
@@ -113,6 +113,16 @@
           </Key>
           <Property Name="maCT" Type="char" MaxLength="5" Nullable="false" />
           <Property Name="maTK" Type="char" MaxLength="5" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="TAIKHOAN">
           <Key>
@@ -279,6 +289,7 @@
           <EntitySet Name="MONAN" EntityType="Self.MONAN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PHANCONGCALAM" EntityType="Self.PHANCONGCALAM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_BANPHUCVU_KHACHHANG" Association="Self.FK_BANPHUCVU_KHACHHANG">
             <End Role="KHACHHANG" EntitySet="KHACHHANG" />
@@ -329,7 +340,8 @@
             <End Role="PHANCONGCALAM" EntitySet="PHANCONGCALAM" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HTHTKDNHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -379,8 +391,8 @@
           <Property Name="gioBatDau" Type="Time" Nullable="false" Precision="7" />
           <Property Name="gioKetThuc" Type="Time" Nullable="false" Precision="7" />
           <Property Name="trangThai" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="TAIKHOANs" Relationship="Self.PHANCONGCALAM" FromRole="CHITIETCALAM" ToRole="TAIKHOAN" />
           <Property Name="soLuong" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TAIKHOANs" Relationship="Self.PHANCONGCALAM" FromRole="CHITIETCALAM" ToRole="TAIKHOAN" />
         </EntityType>
         <EntityType Name="HOADON">
           <Key>
@@ -402,16 +414,16 @@
           <Property Name="tenKH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SDT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
-          <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="KHACHHANG" ToRole="BANPHUCVU" />
+          <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="diemTichLuy" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="KHACHHANG" ToRole="BANPHUCVU" />
         </EntityType>
         <EntityType Name="LOAIMON">
           <Key>
             <PropertyRef Name="maLM" />
           </Key>
           <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="MONANs" Relationship="Self.FK_MONAN_LOAIMON" FromRole="LOAIMON" ToRole="MONAN" />
         </EntityType>
         <EntityType Name="MONAN">
@@ -423,7 +435,7 @@
           <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="GiaMA" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="donViTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
           <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="MONAN" ToRole="CHITIETBANPHUCVU" />
           <NavigationProperty Name="LOAIMON" Relationship="Self.FK_MONAN_LOAIMON" FromRole="MONAN" ToRole="LOAIMON" />
         </EntityType>
@@ -434,13 +446,23 @@
           <Property Name="maNV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="tenNV" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="gioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
           <Property Name="ngaySinh" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="diaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="luong" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_NHANVIEN_TAIKHOAN" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="TAIKHOAN">
           <Key>
@@ -569,6 +591,7 @@
           <EntitySet Name="LOAIMONs" EntityType="Self.LOAIMON" />
           <EntitySet Name="MONANs" EntityType="Self.MONAN" />
           <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
           <AssociationSet Name="FK_BANPHUCVU_KHACHHANG" Association="Self.FK_BANPHUCVU_KHACHHANG">
             <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
@@ -651,12 +674,12 @@
           <EntitySetMapping Name="CHITIETCALAMs">
             <EntityTypeMapping TypeName="HTHTKDNHModel.CHITIETCALAM">
               <MappingFragment StoreEntitySet="CHITIETCALAM">
-                <ScalarProperty Name="soLuong" ColumnName="soLuong" />
                 <ScalarProperty Name="maCT" ColumnName="maCT" />
                 <ScalarProperty Name="ngayLam" ColumnName="ngayLam" />
                 <ScalarProperty Name="gioBatDau" ColumnName="gioBatDau" />
                 <ScalarProperty Name="gioKetThuc" ColumnName="gioKetThuc" />
                 <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+                <ScalarProperty Name="soLuong" ColumnName="soLuong" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -674,12 +697,12 @@
           <EntitySetMapping Name="KHACHHANGs">
             <EntityTypeMapping TypeName="HTHTKDNHModel.KHACHHANG">
               <MappingFragment StoreEntitySet="KHACHHANG">
-                <ScalarProperty Name="diemTichLuy" ColumnName="diemTichLuy" />
                 <ScalarProperty Name="maKH" ColumnName="maKH" />
                 <ScalarProperty Name="tenKH" ColumnName="tenKH" />
                 <ScalarProperty Name="SDT" ColumnName="SDT" />
                 <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
                 <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+                <ScalarProperty Name="diemTichLuy" ColumnName="diemTichLuy" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -715,6 +738,17 @@
                 <ScalarProperty Name="SDT" ColumnName="SDT" />
                 <ScalarProperty Name="diaChi" ColumnName="diaChi" />
                 <ScalarProperty Name="luong" ColumnName="luong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="HTHTKDNHModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -33,7 +33,7 @@ namespace DoAnPBL3
 
         private void btnDatMon_Click(object sender, EventArgs e)
         {
-            ShowForminPanel(new MonAn());
+            //ShowForminPanel(new MonAn());
         }
 
         private void btnChuyenBan_Click(object sender, EventArgs e)

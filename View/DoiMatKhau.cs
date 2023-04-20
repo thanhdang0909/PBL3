@@ -1,4 +1,5 @@
 ﻿using DoAnPBL3.BLL;
+using DoAnPBL3.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,57 +17,60 @@ namespace DoAnPBL3
         public DoiMatKhau()
         {
             InitializeComponent();
-            txtTendangnhap.Text = QLTKBLL.Instance.tenDangNhap;
+            txtTendangnhap.Text = QLTKBLL.Instance.Tendangnhap;
         }
        
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (txtMK1.PasswordChar == '*')
+            if (txtMatkhaucu.PasswordChar == '*')
             {
-                txtMK1.PasswordChar = '\0';
+                txtMatkhaucu.PasswordChar = '\0';
             }
             else
             {
-                txtMK1.PasswordChar = '*';
+                txtMatkhaucu.PasswordChar = '*';
             }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (txtMK3.PasswordChar == '*')
+            if (txtNhaplaimatkhau.PasswordChar == '*')
             {
-                txtMK3.PasswordChar = '\0';
+                txtNhaplaimatkhau.PasswordChar = '\0';
             }
             else
             {
-                txtMK3.PasswordChar = '*';
+                txtNhaplaimatkhau.PasswordChar = '*';
             }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (txtMK2.PasswordChar == '*')
+            if (txtMatkhaumoi.PasswordChar == '*')
             {
-                txtMK2.PasswordChar = '\0';
+                txtMatkhaumoi.PasswordChar = '\0';
             }
             else
             {
-                txtMK2.PasswordChar = '*';
+                txtMatkhaumoi.PasswordChar = '*';
             }
         }
 
-        private void btnDoiMK_Click(object sender, EventArgs e)
-        {
-                string MKCu = txtMK1.Text;
-                string MKMoi = txtMK2.Text;
-                string MKMoiNhapLai = txtMK3.Text;
-                QLTKBLL.Instance.SetPassWord(MKCu, MKMoi,MKMoiNhapLai);
-        }
+        
 
         private void btnThoatt_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            string matkhaucu = txtMatkhaucu.Text;
+            string matkhaumoi = txtMatkhaumoi.Text;
+            string xacnhanmatkhau = txtNhaplaimatkhau.Text;
+            QLTKBLL.Instance.Doimatkhau(matkhaucu, matkhaumoi, xacnhanmatkhau);
+
         }
     }
 }
