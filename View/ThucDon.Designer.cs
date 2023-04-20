@@ -52,6 +52,8 @@
             this.pbMonTM = new System.Windows.Forms.PictureBox();
             this.pbNuocUong = new System.Windows.Forms.PictureBox();
             this.cbbTimKiem = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTK = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDSMA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonNuong)).BeginInit();
@@ -60,15 +62,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbComMi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonTM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuocUong)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtgvDSMA);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(25, 47);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 731);
+            this.groupBox1.Size = new System.Drawing.Size(679, 767);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THỰC ĐƠN";
@@ -88,7 +92,7 @@
             this.dtgvDSMA.Name = "dtgvDSMA";
             this.dtgvDSMA.RowHeadersWidth = 62;
             this.dtgvDSMA.RowTemplate.Height = 28;
-            this.dtgvDSMA.Size = new System.Drawing.Size(673, 702);
+            this.dtgvDSMA.Size = new System.Drawing.Size(673, 738);
             this.dtgvDSMA.TabIndex = 0;
             // 
             // STT
@@ -150,7 +154,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(1038, 47);
+            this.btnTimKiem.Location = new System.Drawing.Point(1066, 242);
             this.btnTimKiem.MaximumSize = new System.Drawing.Size(171, 41);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(171, 41);
@@ -291,17 +295,49 @@
             // cbbTimKiem
             // 
             this.cbbTimKiem.FormattingEnabled = true;
-            this.cbbTimKiem.Location = new System.Drawing.Point(764, 52);
+            this.cbbTimKiem.Location = new System.Drawing.Point(54, 26);
             this.cbbTimKiem.Name = "cbbTimKiem";
-            this.cbbTimKiem.Size = new System.Drawing.Size(254, 28);
+            this.cbbTimKiem.Size = new System.Drawing.Size(320, 28);
             this.cbbTimKiem.TabIndex = 63;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnTK);
+            this.panel1.Controls.Add(this.cbbTimKiem);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(679, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(608, 89);
+            this.panel1.TabIndex = 64;
+            // 
+            // btnTK
+            // 
+            this.btnTK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTK.BorderRadius = 15;
+            this.btnTK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTK.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK.ForeColor = System.Drawing.Color.White;
+            this.btnTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTK.Image")));
+            this.btnTK.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTK.Location = new System.Drawing.Point(399, 26);
+            this.btnTK.MaximumSize = new System.Drawing.Size(159, 40);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Size = new System.Drawing.Size(159, 40);
+            this.btnTK.TabIndex = 66;
+            this.btnTK.Text = "Tìm kiếm";
             // 
             // ThucDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1287, 767);
-            this.Controls.Add(this.cbbTimKiem);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pbMonTM);
@@ -328,6 +364,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbComMi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonTM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuocUong)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,5 +395,7 @@
         private System.Windows.Forms.PictureBox pbMonTM;
         private System.Windows.Forms.PictureBox pbNuocUong;
         private System.Windows.Forms.ComboBox cbbTimKiem;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnTK;
     }
 }

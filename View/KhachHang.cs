@@ -102,7 +102,7 @@ namespace DoAnPBL3.View
         }
         private void btnDatBan_Click(object sender, EventArgs e)
         {
-            ShowForminPanel(new DatBan());
+            ShowForminPanel(new DatBanKH());
         }
 
     }

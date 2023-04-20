@@ -30,35 +30,6 @@ namespace DoAnPBL3
             this.pnlDeskTop.Controls.SetChildIndex(form, 0);
             form.Show();
         }
-
-        private void contextMenuStrip1_MouseLeave(object sender, EventArgs e)
-        {
-            ((ContextMenuStrip)sender).Hide();
-        }
-
-        private void mónĂnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            ShowForminPanel(new MonAn());
-        }
-
-        private void nướcUốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowForminPanel(new NuocUong());
-        }
-
-        private void trángMiệngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowForminPanel(new TrangMieng());
-        }
-        private void btnThucDon_MouseEnter(object sender, EventArgs e)
-        {
-            pnlUI.Height = btnThucDon.Height;
-            pnlUI.Top = btnThucDon.Top;
-            pnlUI.Show();
-            ((Guna2Button)sender).ContextMenuStrip.Show(Cursor.Position.X, Cursor.Position.Y);
-        }
-
      
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
@@ -105,7 +76,6 @@ namespace DoAnPBL3
             pnlUI.Top = btnBanAn.Top;
             pnlUI.Show();
             ShowForminPanel(new ThucDon());
-
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

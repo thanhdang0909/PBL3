@@ -59,9 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\QLBABLL.cs" />
-    <Compile Include="BLL\QLHD.cs" />
+    <Compile Include="BLL\QLHDBLL.cs" />
     <Compile Include="BLL\QLKHBLL.cs" />
     <Compile Include="BLL\QLCLVBLL.cs" />
+    <Compile Include="BLL\QLNVBLL.cs" />
+    <Compile Include="BLL\QLTDBLL.cs" />
     <Compile Include="BLL\QLTKBLL.cs" />
     <Compile Include="DTO\BANAN.cs">
       <DependentUpon>QLNH.tt</DependentUpon>
@@ -132,12 +134,6 @@
     <Compile Include="View\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DatBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\DatBan.Designer.cs">
-      <DependentUpon>DatBan.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\DatBanKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,12 +163,6 @@
     </Compile>
     <Compile Include="View\InHoaDon.Designer.cs">
       <DependentUpon>InHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\MonAn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\MonAn.Designer.cs">
-      <DependentUpon>MonAn.cs</DependentUpon>
     </Compile>
     <Compile Include="View\BanAn.cs">
       <SubType>Form</SubType>
@@ -221,12 +211,6 @@
     </Compile>
     <Compile Include="View\KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\NuocUong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\NuocUong.Designer.cs">
-      <DependentUpon>NuocUong.cs</DependentUpon>
     </Compile>
     <Compile Include="View\QuanLyCaTruc.cs">
       <SubType>Form</SubType>
@@ -294,12 +278,6 @@
     <Compile Include="View\TrangChuAdmin.Designer.cs">
       <DependentUpon>TrangChuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TrangMieng.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\TrangMieng.Designer.cs">
-      <DependentUpon>TrangMieng.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -344,9 +322,6 @@
     <EmbeddedResource Include="View\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\DatBan.resx">
-      <DependentUpon>DatBan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\DatBanKH.resx">
       <DependentUpon>DatBanKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,9 +336,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\InHoaDon.resx">
       <DependentUpon>InHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\MonAn.resx">
-      <DependentUpon>MonAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -398,9 +370,6 @@
     <EmbeddedResource Include="View\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\NuocUong.resx">
-      <DependentUpon>NuocUong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\QuanLyCaTruc.resx">
       <DependentUpon>QuanLyCaTruc.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,9 +402,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\TrangChuAdmin.resx">
       <DependentUpon>TrangChuAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\TrangMieng.resx">
-      <DependentUpon>TrangMieng.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UI.resx">
       <DependentUpon>UI.cs</DependentUpon>

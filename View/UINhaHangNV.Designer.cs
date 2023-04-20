@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UINhaHangNV));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlUI = new System.Windows.Forms.Panel();
             this.btnCaLV = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2Button();
@@ -38,21 +38,14 @@
             this.btnBanAn = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnThucDon = new Guna.UI2.WinForms.Guna2Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.mónĂnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nướcUốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trángMiệngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlDeskTop = new System.Windows.Forms.Panel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +69,33 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(189, 640);
             this.guna2CustomGradientPanel1.TabIndex = 28;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageOffset = new System.Drawing.Point(5, 0);
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 503);
+            this.guna2Button1.MaximumSize = new System.Drawing.Size(188, 55);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(188, 54);
+            this.guna2Button1.TabIndex = 38;
+            this.guna2Button1.Text = "Đặt bàn";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.TextOffset = new System.Drawing.Point(13, 0);
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // pnlUI
             // 
@@ -214,7 +234,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThucDon.BackColor = System.Drawing.Color.Transparent;
-            this.btnThucDon.ContextMenuStrip = this.contextMenuStrip1;
             this.btnThucDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThucDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThucDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -235,48 +254,6 @@
             this.btnThucDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThucDon.TextOffset = new System.Drawing.Point(13, 0);
             this.btnThucDon.Click += new System.EventHandler(this.btnThucDon_Click);
-            this.btnThucDon.MouseEnter += new System.EventHandler(this.btnThucDon_MouseEnter);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mónĂnToolStripMenuItem,
-            this.nướcUốngToolStripMenuItem,
-            this.trángMiệngToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(257, 106);
-            this.contextMenuStrip1.MouseLeave += new System.EventHandler(this.contextMenuStrip1_MouseLeave);
-            // 
-            // mónĂnToolStripMenuItem
-            // 
-            this.mónĂnToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mónĂnToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
-            this.mónĂnToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mónĂnToolStripMenuItem.Image")));
-            this.mónĂnToolStripMenuItem.Name = "mónĂnToolStripMenuItem";
-            this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
-            this.mónĂnToolStripMenuItem.Text = "Món ăn";
-            this.mónĂnToolStripMenuItem.Click += new System.EventHandler(this.mónĂnToolStripMenuItem_Click);
-            // 
-            // nướcUốngToolStripMenuItem
-            // 
-            this.nướcUốngToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.nướcUốngToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
-            this.nướcUốngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nướcUốngToolStripMenuItem.Image")));
-            this.nướcUốngToolStripMenuItem.Name = "nướcUốngToolStripMenuItem";
-            this.nướcUốngToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
-            this.nướcUốngToolStripMenuItem.Text = "Nước uống";
-            this.nướcUốngToolStripMenuItem.Click += new System.EventHandler(this.nướcUốngToolStripMenuItem_Click);
-            // 
-            // trángMiệngToolStripMenuItem
-            // 
-            this.trángMiệngToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.trángMiệngToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
-            this.trángMiệngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("trángMiệngToolStripMenuItem.Image")));
-            this.trángMiệngToolStripMenuItem.Name = "trángMiệngToolStripMenuItem";
-            this.trángMiệngToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
-            this.trángMiệngToolStripMenuItem.Text = "Món tráng miệng";
-            this.trángMiệngToolStripMenuItem.Click += new System.EventHandler(this.trángMiệngToolStripMenuItem_Click);
             // 
             // btnTrangChu
             // 
@@ -359,33 +336,6 @@
             this.pnlDeskTop.Size = new System.Drawing.Size(847, 611);
             this.pnlDeskTop.TabIndex = 33;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(5, 0);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 503);
-            this.guna2Button1.MaximumSize = new System.Drawing.Size(188, 55);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(188, 54);
-            this.guna2Button1.TabIndex = 38;
-            this.guna2Button1.Text = "Đặt bàn";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.TextOffset = new System.Drawing.Point(13, 0);
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
             // UINhaHangNV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -399,7 +349,6 @@
             this.Text = "Form1";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -408,10 +357,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mónĂnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nướcUốngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trángMiệngToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Button btnCaLV;
         private Guna.UI2.WinForms.Guna2Button btnKhachHang;
         private Guna.UI2.WinForms.Guna2Button btnHoaDon;
@@ -424,7 +369,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel pnlDeskTop;
         private System.Windows.Forms.Panel pnlUI;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
