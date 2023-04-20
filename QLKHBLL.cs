@@ -23,7 +23,7 @@ namespace DoAnPBL3.BLL
             }
             else
             {
-                var list = db.KHACHHANGs.Where(p => p.SDT == sdt).ToList();
+                var list = db.KHACHHANGs.Where(p => p.SDT.Contains(sdt)).ToList();
                 return list;
             }
         }
