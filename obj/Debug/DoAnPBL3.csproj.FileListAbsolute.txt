@@ -97,3 +97,5 @@ D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.CopyComplete
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.exe
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.pdb
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThucDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.DatBanKH.resources

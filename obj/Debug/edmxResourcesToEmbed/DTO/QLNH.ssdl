@@ -7,7 +7,7 @@
     <Property Name="maBan" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="soGhe" Type="int" Nullable="false" />
     <Property Name="trangThai" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="ghiChu" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ghiChu" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="BANPHUCVU">
     <Key>
@@ -95,7 +95,7 @@
     <Property Name="maTK" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="tenNV" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="gioiTinh" Type="nvarchar" MaxLength="5" Nullable="false" />
-    <Property Name="ngaySinh" Type="smalldatetime" Nullable="false" />
+    <Property Name="ngaySinh" Type="date" Nullable="false" />
     <Property Name="CCCD" Type="char" MaxLength="12" Nullable="false" />
     <Property Name="SDT" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="diaChi" Type="nvarchar" MaxLength="50" Nullable="false" />

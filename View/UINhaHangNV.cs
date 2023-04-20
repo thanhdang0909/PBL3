@@ -99,6 +99,21 @@ namespace DoAnPBL3
             ShowForminPanel(new CaLamViec());
         }
 
-     
+        private void btnThucDon_Click(object sender, EventArgs e)
+        {
+            pnlUI.Height = btnBanAn.Height;
+            pnlUI.Top = btnBanAn.Top;
+            pnlUI.Show();
+            ShowForminPanel(new ThucDon());
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            pnlUI.Height = btnBanAn.Height;
+            pnlUI.Top = btnBanAn.Top;
+            pnlUI.Show();
+            ShowForminPanel(new DatBanKH());
+        }
     }
 }

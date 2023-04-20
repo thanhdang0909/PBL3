@@ -55,6 +55,5 @@ namespace DoAnPBL3.BLL
             db.KHACHHANGs.Add(kh);
             db.SaveChanges();
         }
-      
     }
 }

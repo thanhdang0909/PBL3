@@ -138,6 +138,12 @@
     <Compile Include="View\DatBan.Designer.cs">
       <DependentUpon>DatBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\DatBanKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DatBanKH.Designer.cs">
+      <DependentUpon>DatBanKH.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,12 @@
     <Compile Include="View\ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ThucDon.Designer.cs">
+      <DependentUpon>ThucDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TrangChuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\DatBan.resx">
       <DependentUpon>DatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DatBanKH.resx">
+      <DependentUpon>DatBanKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
@@ -412,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ThucDon.resx">
+      <DependentUpon>ThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TrangChuAdmin.resx">
       <DependentUpon>TrangChuAdmin.cs</DependentUpon>

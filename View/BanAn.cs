@@ -35,7 +35,20 @@ namespace DoAnPBL3.View
             cbbTrangThai.Items.Add("Đã đặt");
             cbbTrangThai.Items.Add("Trống");
         }
-       
+
+        public void SetSTT()
+        {
+            for (int i = 1; i <= dtgvDSBA.Rows.Count; i++)
+            {
+                dtgvDSBA.Rows[i - 1].Cells[0].Value = i;
+            }
+        }
+
+        private void BanAn_Load(object sender, EventArgs e)
+        {
+            SetSTT();
+        }
+
         private void btnDatBan_Click(object sender, EventArgs e)
         {
             ShowForminPanel(new DatBan());
@@ -47,5 +60,7 @@ namespace DoAnPBL3.View
             string soGhe = txtSoGhe.Text;
             dtgvDSBA.DataSource = QLBABLL.Instance.GetAllBABy(trangThai, soGhe);
         }
+
+       
     }
 }

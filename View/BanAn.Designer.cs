@@ -34,6 +34,7 @@
             this.txtSoGhe = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgvDSBA = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soGhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,6 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvDSBA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDSBA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.maBan,
             this.soGhe,
             this.trangThai,
@@ -123,6 +125,13 @@
             this.dtgvDSBA.RowTemplate.Height = 28;
             this.dtgvDSBA.Size = new System.Drawing.Size(659, 289);
             this.dtgvDSBA.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
             // 
             // maBan
             // 
@@ -249,6 +258,7 @@
             this.Name = "BanAn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BanAn";
+            this.Load += new System.EventHandler(this.BanAn_Load);
             this.pnlBanAn.ResumeLayout(false);
             this.pnlBanAn.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -262,10 +272,6 @@
         private System.Windows.Forms.Panel pnlBanAn;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtgvDSBA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soGhe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn trangThai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
         private System.Windows.Forms.Button btnThoat;
         private Guna.UI2.WinForms.Guna2TextBox txtSoGhe;
         private System.Windows.Forms.Label label1;
@@ -274,5 +280,10 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btnDatBan;
         private System.Windows.Forms.ComboBox cbbTrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soGhe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
     }
 }

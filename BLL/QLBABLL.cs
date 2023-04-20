@@ -1,4 +1,5 @@
 ﻿using DoAnPBL3.DTO;
+using DoAnPBL3.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,31 @@ namespace DoAnPBL3.BLL
                 var list = db.BANANs.Where(p => p.trangThai == trangThai && p.soGhe == SG);
                 return list.ToList();
             }
+        }
+
+        public void Add(BANAN ba)
+        {
+            QLNH_DB db = new QLNH_DB();
+            string lastID = db.BANANs.OrderByDescending(p => p.maBan).Select(p => p.maBan).FirstOrDefault();
+            string nextID = "";
+            if(lastID != "")
+            {
+                int num = int.Parse(lastID.Replace("MB",""));
+                num++;
+                nextID = "MB" + num.ToString("D3");
+            }
+            ba.maBan = nextID;
+            db.BANANs.Add(ba);
+            db.SaveChanges();
+        }    
+
+        public void Update(BANAN ba)
+        {
+            QLNH_DB db = new QLNH_DB();
+            BANAN ban = db.BANANs.Find(ba.maBan);
+            ban.soGhe = ba.soGhe;
+            ban.ghiChu = ba.ghiChu;
+            db.SaveChanges();
         }
 
 

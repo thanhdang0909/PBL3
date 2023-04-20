@@ -32,11 +32,6 @@
             this.pnlBanan = new System.Windows.Forms.Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dtgvBanan = new System.Windows.Forms.DataGridView();
-            this.MaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaPV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soghe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTimkiem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -44,14 +39,20 @@
             this.btnCapnhat = new Guna.UI2.WinForms.Guna2Button();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.txtGhichu = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTrangthai = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSoghe = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaban = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maPV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soGhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlBanan.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBanan)).BeginInit();
@@ -86,53 +87,22 @@
             // 
             this.dtgvBanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvBanan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaBan,
-            this.MaPV,
-            this.Soghe,
-            this.Trangthai,
-            this.Ghichu});
-            this.dtgvBanan.Location = new System.Drawing.Point(4, 5);
+            this.Column1,
+            this.maBan,
+            this.maPV,
+            this.soGhe,
+            this.trangThai,
+            this.ghiChu});
+            this.dtgvBanan.Location = new System.Drawing.Point(0, 0);
             this.dtgvBanan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvBanan.Name = "dtgvBanan";
+            this.dtgvBanan.ReadOnly = true;
             this.dtgvBanan.RowHeadersWidth = 51;
             this.dtgvBanan.RowTemplate.Height = 24;
+            this.dtgvBanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvBanan.Size = new System.Drawing.Size(706, 366);
             this.dtgvBanan.TabIndex = 0;
-            // 
-            // MaBan
-            // 
-            this.MaBan.HeaderText = "Mã bàn";
-            this.MaBan.MinimumWidth = 6;
-            this.MaBan.Name = "MaBan";
-            this.MaBan.Width = 125;
-            // 
-            // MaPV
-            // 
-            this.MaPV.HeaderText = "Mã phục vụ";
-            this.MaPV.MinimumWidth = 6;
-            this.MaPV.Name = "MaPV";
-            this.MaPV.Width = 125;
-            // 
-            // Soghe
-            // 
-            this.Soghe.HeaderText = "Số ghế";
-            this.Soghe.MinimumWidth = 6;
-            this.Soghe.Name = "Soghe";
-            this.Soghe.Width = 125;
-            // 
-            // Trangthai
-            // 
-            this.Trangthai.HeaderText = "Trạng thái";
-            this.Trangthai.MinimumWidth = 6;
-            this.Trangthai.Name = "Trangthai";
-            this.Trangthai.Width = 125;
-            // 
-            // Ghichu
-            // 
-            this.Ghichu.HeaderText = "Ghi chú";
-            this.Ghichu.MinimumWidth = 6;
-            this.Ghichu.Name = "Ghichu";
-            this.Ghichu.Width = 125;
+            this.dtgvBanan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvBanan_CellClick);
             // 
             // txtTimkiem
             // 
@@ -145,9 +115,10 @@
             this.txtTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimkiem.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimkiem.Location = new System.Drawing.Point(145, 72);
+            this.txtTimkiem.Location = new System.Drawing.Point(169, 64);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PasswordChar = '\0';
@@ -156,6 +127,7 @@
             this.txtTimkiem.SelectedText = "";
             this.txtTimkiem.Size = new System.Drawing.Size(414, 48);
             this.txtTimkiem.TabIndex = 57;
+            this.txtTimkiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnTimkiem
             // 
@@ -178,6 +150,7 @@
             this.btnTimkiem.TabIndex = 56;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.TextOffset = new System.Drawing.Point(15, 0);
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -237,6 +210,7 @@
             this.btnCapnhat.TabIndex = 1;
             this.btnCapnhat.Text = "Cập nhật";
             this.btnCapnhat.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btnThem
             // 
@@ -259,13 +233,14 @@
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextOffset = new System.Drawing.Point(5, 0);
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel2.Controls.Add(this.cbbTrangThai);
             this.guna2Panel2.Controls.Add(this.txtGhichu);
             this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.Controls.Add(this.txtTrangthai);
             this.guna2Panel2.Controls.Add(this.txtSoghe);
             this.guna2Panel2.Controls.Add(this.txtMaban);
             this.guna2Panel2.Controls.Add(this.label5);
@@ -278,6 +253,15 @@
             this.guna2Panel2.Size = new System.Drawing.Size(467, 375);
             this.guna2Panel2.TabIndex = 54;
             // 
+            // cbbTrangThai
+            // 
+            this.cbbTrangThai.FormattingEnabled = true;
+            this.cbbTrangThai.Location = new System.Drawing.Point(160, 181);
+            this.cbbTrangThai.Name = "cbbTrangThai";
+            this.cbbTrangThai.Size = new System.Drawing.Size(258, 28);
+            this.cbbTrangThai.TabIndex = 52;
+            this.cbbTrangThai.SelectedIndexChanged += new System.EventHandler(this.cbbTrangThai_SelectedIndexChanged);
+            // 
             // txtGhichu
             // 
             this.txtGhichu.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -287,7 +271,8 @@
             this.txtGhichu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGhichu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGhichu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGhichu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGhichu.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGhichu.ForeColor = System.Drawing.Color.Black;
             this.txtGhichu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGhichu.Location = new System.Drawing.Point(160, 243);
             this.txtGhichu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -298,6 +283,7 @@
             this.txtGhichu.SelectedText = "";
             this.txtGhichu.Size = new System.Drawing.Size(258, 48);
             this.txtGhichu.TabIndex = 51;
+            this.txtGhichu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -310,27 +296,6 @@
             this.label3.TabIndex = 50;
             this.label3.Text = "Ghi chú";
             // 
-            // txtTrangthai
-            // 
-            this.txtTrangthai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTrangthai.DefaultText = "";
-            this.txtTrangthai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTrangthai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTrangthai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangthai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangthai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangthai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTrangthai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangthai.Location = new System.Drawing.Point(160, 170);
-            this.txtTrangthai.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txtTrangthai.Name = "txtTrangthai";
-            this.txtTrangthai.PasswordChar = '\0';
-            this.txtTrangthai.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtTrangthai.PlaceholderText = "";
-            this.txtTrangthai.SelectedText = "";
-            this.txtTrangthai.Size = new System.Drawing.Size(258, 48);
-            this.txtTrangthai.TabIndex = 49;
-            // 
             // txtSoghe
             // 
             this.txtSoghe.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -340,7 +305,8 @@
             this.txtSoghe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSoghe.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSoghe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoghe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSoghe.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoghe.ForeColor = System.Drawing.Color.Black;
             this.txtSoghe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoghe.Location = new System.Drawing.Point(160, 94);
             this.txtSoghe.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -351,6 +317,7 @@
             this.txtSoghe.SelectedText = "";
             this.txtSoghe.Size = new System.Drawing.Size(258, 48);
             this.txtSoghe.TabIndex = 48;
+            this.txtSoghe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMaban
             // 
@@ -360,8 +327,10 @@
             this.txtMaban.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMaban.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaban.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaban.Enabled = false;
             this.txtMaban.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaban.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaban.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaban.ForeColor = System.Drawing.Color.Black;
             this.txtMaban.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaban.Location = new System.Drawing.Point(160, 19);
             this.txtMaban.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -369,9 +338,11 @@
             this.txtMaban.PasswordChar = '\0';
             this.txtMaban.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtMaban.PlaceholderText = "";
+            this.txtMaban.ReadOnly = true;
             this.txtMaban.SelectedText = "";
             this.txtMaban.Size = new System.Drawing.Size(258, 48);
             this.txtMaban.TabIndex = 44;
+            this.txtMaban.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -406,6 +377,59 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Mã bàn";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 60;
+            // 
+            // maBan
+            // 
+            this.maBan.DataPropertyName = "maBan";
+            this.maBan.HeaderText = "Mã bàn";
+            this.maBan.MinimumWidth = 8;
+            this.maBan.Name = "maBan";
+            this.maBan.ReadOnly = true;
+            this.maBan.Width = 120;
+            // 
+            // maPV
+            // 
+            this.maPV.DataPropertyName = "maPV";
+            this.maPV.HeaderText = "Mã phục vụ";
+            this.maPV.MinimumWidth = 8;
+            this.maPV.Name = "maPV";
+            this.maPV.ReadOnly = true;
+            this.maPV.Width = 130;
+            // 
+            // soGhe
+            // 
+            this.soGhe.DataPropertyName = "soGhe";
+            this.soGhe.HeaderText = "Số ghế";
+            this.soGhe.MinimumWidth = 8;
+            this.soGhe.Name = "soGhe";
+            this.soGhe.ReadOnly = true;
+            this.soGhe.Width = 70;
+            // 
+            // trangThai
+            // 
+            this.trangThai.DataPropertyName = "trangThai";
+            this.trangThai.HeaderText = "Trạng thái";
+            this.trangThai.MinimumWidth = 8;
+            this.trangThai.Name = "trangThai";
+            this.trangThai.ReadOnly = true;
+            this.trangThai.Width = 130;
+            // 
+            // ghiChu
+            // 
+            this.ghiChu.DataPropertyName = "ghiChu";
+            this.ghiChu.HeaderText = "Ghi chú";
+            this.ghiChu.MinimumWidth = 8;
+            this.ghiChu.Name = "ghiChu";
+            this.ghiChu.ReadOnly = true;
+            this.ghiChu.Width = 150;
+            // 
             // BanAnAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -418,6 +442,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BanAn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.BanAnAdmin_Load);
             this.pnlBanan.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBanan)).EndInit();
@@ -433,11 +458,6 @@
         private System.Windows.Forms.Panel pnlBanan;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.DataGridView dtgvBanan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaPV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soghe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Trangthai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ghichu;
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiem;
         private Guna.UI2.WinForms.Guna2Button btnTimkiem;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -447,11 +467,17 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2TextBox txtGhichu;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtTrangthai;
         private Guna.UI2.WinForms.Guna2TextBox txtSoghe;
         private Guna.UI2.WinForms.Guna2TextBox txtMaban;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbTrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maPV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soGhe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
     }
 }
