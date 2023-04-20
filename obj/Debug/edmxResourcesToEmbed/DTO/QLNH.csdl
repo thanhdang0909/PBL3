@@ -90,7 +90,6 @@
     <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="GiaMA" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="donViTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" />
     <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="MONAN" ToRole="CHITIETBANPHUCVU" />
     <NavigationProperty Name="LOAIMON" Relationship="Self.FK_MONAN_LOAIMON" FromRole="MONAN" ToRole="LOAIMON" />
   </EntityType>

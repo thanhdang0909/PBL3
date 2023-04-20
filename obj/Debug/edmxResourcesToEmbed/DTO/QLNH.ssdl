@@ -85,7 +85,6 @@
     <Property Name="maLM" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="GiaMA" Type="money" Nullable="false" />
     <Property Name="donViTinh" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="AnhMA" Type="image" />
   </EntityType>
   <EntityType Name="NHANVIEN">
     <Key>

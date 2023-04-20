@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThucDon));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvDSMA = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenLM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pbMonNuong = new System.Windows.Forms.PictureBox();
@@ -54,6 +48,12 @@
             this.cbbTimKiem = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTK = new Guna.UI2.WinForms.Guna2Button();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenLM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDSMA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonNuong)).BeginInit();
@@ -95,53 +95,6 @@
             this.dtgvDSMA.Size = new System.Drawing.Size(673, 738);
             this.dtgvDSMA.TabIndex = 0;
             // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 8;
-            this.STT.Name = "STT";
-            this.STT.Width = 60;
-            // 
-            // maMA
-            // 
-            this.maMA.DataPropertyName = "maMA";
-            this.maMA.HeaderText = "Mã món ăn";
-            this.maMA.MinimumWidth = 8;
-            this.maMA.Name = "maMA";
-            this.maMA.Width = 140;
-            // 
-            // tenMA
-            // 
-            this.tenMA.DataPropertyName = "tenMA";
-            this.tenMA.HeaderText = "Tên món ăn";
-            this.tenMA.MinimumWidth = 8;
-            this.tenMA.Name = "tenMA";
-            this.tenMA.Width = 150;
-            // 
-            // donViTinh
-            // 
-            this.donViTinh.DataPropertyName = "donViTinh";
-            this.donViTinh.HeaderText = "Đơn vị tính";
-            this.donViTinh.MinimumWidth = 8;
-            this.donViTinh.Name = "donViTinh";
-            this.donViTinh.Width = 150;
-            // 
-            // tenLM
-            // 
-            this.tenLM.DataPropertyName = "tenLM";
-            this.tenLM.HeaderText = "Loại món";
-            this.tenLM.MinimumWidth = 8;
-            this.tenLM.Name = "tenLM";
-            this.tenLM.Width = 150;
-            // 
-            // donGia
-            // 
-            this.donGia.DataPropertyName = "donGia";
-            this.donGia.HeaderText = "Đơn giá";
-            this.donGia.MinimumWidth = 8;
-            this.donGia.Name = "donGia";
-            this.donGia.Width = 150;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BorderRadius = 15;
@@ -181,6 +134,7 @@
             this.pbMonNuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMonNuong.TabIndex = 51;
             this.pbMonNuong.TabStop = false;
+            this.pbMonNuong.Click += new System.EventHandler(this.pbMonNuong_Click);
             // 
             // pbMonHap
             // 
@@ -191,6 +145,7 @@
             this.pbMonHap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMonHap.TabIndex = 52;
             this.pbMonHap.TabStop = false;
+            this.pbMonHap.Click += new System.EventHandler(this.pbMonHap_Click);
             // 
             // pbMonLau
             // 
@@ -201,6 +156,7 @@
             this.pbMonLau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMonLau.TabIndex = 53;
             this.pbMonLau.TabStop = false;
+            this.pbMonLau.Click += new System.EventHandler(this.pbMonLau_Click);
             // 
             // pbComMi
             // 
@@ -211,6 +167,7 @@
             this.pbComMi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbComMi.TabIndex = 54;
             this.pbComMi.TabStop = false;
+            this.pbComMi.Click += new System.EventHandler(this.pbComMi_Click);
             // 
             // label2
             // 
@@ -281,6 +238,7 @@
             this.pbMonTM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMonTM.TabIndex = 60;
             this.pbMonTM.TabStop = false;
+            this.pbMonTM.Click += new System.EventHandler(this.pbMonTM_Click);
             // 
             // pbNuocUong
             // 
@@ -291,11 +249,13 @@
             this.pbNuocUong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNuocUong.TabIndex = 59;
             this.pbNuocUong.TabStop = false;
+            this.pbNuocUong.Click += new System.EventHandler(this.pbNuocUong_Click);
             // 
             // cbbTimKiem
             // 
             this.cbbTimKiem.FormattingEnabled = true;
-            this.cbbTimKiem.Location = new System.Drawing.Point(54, 26);
+            this.cbbTimKiem.Location = new System.Drawing.Point(41, 26);
+            this.cbbTimKiem.MaximumSize = new System.Drawing.Size(320, 0);
             this.cbbTimKiem.Name = "cbbTimKiem";
             this.cbbTimKiem.Size = new System.Drawing.Size(320, 28);
             this.cbbTimKiem.TabIndex = 63;
@@ -312,9 +272,7 @@
             // 
             // btnTK
             // 
-            this.btnTK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTK.BorderRadius = 15;
             this.btnTK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -324,13 +282,61 @@
             this.btnTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
             this.btnTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTK.Image")));
-            this.btnTK.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTK.Location = new System.Drawing.Point(399, 26);
-            this.btnTK.MaximumSize = new System.Drawing.Size(159, 40);
+            this.btnTK.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnTK.Location = new System.Drawing.Point(388, 12);
+            this.btnTK.MaximumSize = new System.Drawing.Size(170, 52);
             this.btnTK.Name = "btnTK";
-            this.btnTK.Size = new System.Drawing.Size(159, 40);
+            this.btnTK.Size = new System.Drawing.Size(170, 52);
             this.btnTK.TabIndex = 66;
             this.btnTK.Text = "Tìm kiếm";
+            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 8;
+            this.STT.Name = "STT";
+            this.STT.Width = 60;
+            // 
+            // maMA
+            // 
+            this.maMA.DataPropertyName = "maMA";
+            this.maMA.HeaderText = "Mã món ăn";
+            this.maMA.MinimumWidth = 8;
+            this.maMA.Name = "maMA";
+            this.maMA.Width = 140;
+            // 
+            // tenMA
+            // 
+            this.tenMA.DataPropertyName = "tenMA";
+            this.tenMA.HeaderText = "Tên món ăn";
+            this.tenMA.MinimumWidth = 8;
+            this.tenMA.Name = "tenMA";
+            this.tenMA.Width = 150;
+            // 
+            // donViTinh
+            // 
+            this.donViTinh.DataPropertyName = "donViTinh";
+            this.donViTinh.HeaderText = "Đơn vị tính";
+            this.donViTinh.MinimumWidth = 8;
+            this.donViTinh.Name = "donViTinh";
+            this.donViTinh.Width = 150;
+            // 
+            // tenLM
+            // 
+            this.tenLM.DataPropertyName = "maLM";
+            this.tenLM.HeaderText = "Loại món";
+            this.tenLM.MinimumWidth = 8;
+            this.tenLM.Name = "tenLM";
+            this.tenLM.Width = 150;
+            // 
+            // donGia
+            // 
+            this.donGia.DataPropertyName = "GiaMA";
+            this.donGia.HeaderText = "Đơn giá";
+            this.donGia.MinimumWidth = 8;
+            this.donGia.Name = "donGia";
+            this.donGia.Width = 150;
             // 
             // ThucDon
             // 
@@ -356,6 +362,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThucDon";
             this.Text = "ThucDon";
+            this.Load += new System.EventHandler(this.ThucDon_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDSMA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonNuong)).EndInit();
@@ -374,12 +381,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dtgvDSMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn donViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenLM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbMonNuong;
@@ -397,5 +398,11 @@
         private System.Windows.Forms.ComboBox cbbTimKiem;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnTK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maMA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenMA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donViTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenLM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
     }
 }

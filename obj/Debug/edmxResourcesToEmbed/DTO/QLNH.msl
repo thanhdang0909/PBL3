@@ -83,7 +83,6 @@
           <ScalarProperty Name="maLM" ColumnName="maLM" />
           <ScalarProperty Name="GiaMA" ColumnName="GiaMA" />
           <ScalarProperty Name="donViTinh" ColumnName="donViTinh" />
-          <ScalarProperty Name="AnhMA" ColumnName="AnhMA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
