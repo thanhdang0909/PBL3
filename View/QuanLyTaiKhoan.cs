@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnPBL3.BLL;
 using System.Net.NetworkInformation;
+using DoAnPBL3.DTO;
 
 namespace DoAnPBL3
 {
@@ -51,6 +52,68 @@ namespace DoAnPBL3
             }
         }
 
-        
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtTendangnhap.Text) || string.IsNullOrEmpty(txtMaTK.Text) || string.IsNullOrEmpty(txtMathau.Text) || cbbVaitro.SelectedItem == null)
+            {
+                MessageBox.Show("Thêm không thành công! Vui lòng nhập đầy đủ thông tin!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                TAIKHOAN tk = new TAIKHOAN
+                {
+                    maTK = txtMaTK.Text,
+                    tenDangNhap = txtTendangnhap.Text,
+                    matKhau = txtMathau.Text,
+                    vaiTro = Convert.ToBoolean(cbbVaitro.SelectedItem.ToString())
+                };
+                QLTKBLL.Instance.AddTaikhoan(tk);
+                MessageBox.Show("Thêm thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCapnhat_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTendangnhap.Text) || string.IsNullOrEmpty(txtMaTK.Text) || string.IsNullOrEmpty(txtMathau.Text) || cbbVaitro.SelectedItem == null)
+            {
+                MessageBox.Show("Cập nhật không thành công! Vui lòng nhập đầy đủ thông tin!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                if(dtgvQLTK.SelectedRows.Count > 0)
+                {
+                    TAIKHOAN tk = new TAIKHOAN
+                    {
+                        maTK = txtMaTK.Text,
+                        tenDangNhap = txtTendangnhap.Text,
+                        matKhau = txtMathau.Text,
+                        vaiTro = Convert.ToBoolean(cbbVaitro.SelectedItem.ToString())
+                    };
+                    QLTKBLL.Instance.UpdateTaikhoan(tk);
+                    MessageBox.Show("Cập nhật thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn một dòng để cập nhật!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn chắc chắn muốn xóa!","Thông tin",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if(dtgvQLTK.SelectedRows.Count > 0)
+                {
+                    string matk = dtgvQLTK.SelectedRows[0].Cells["maTK"].Value.ToString();
+                    QLTKBLL.Instance.DeleteTaikhoan(matk);
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn một dòng để xóa!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
+            }
+        }
     }
 }

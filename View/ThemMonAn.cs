@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnPBL3.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace DoAnPBL3
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            string txt = txtTimkiem.Text;
+            dtgvMonan.DataSource = QLTDBLL.Instance.GetAll_MonAn(txt);
         }
     }
 }

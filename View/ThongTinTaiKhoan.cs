@@ -31,12 +31,12 @@ namespace DoAnPBL3.View
 
         private void btnCapnhat_Click(object sender, EventArgs e)
         {
-                //string maTK = txtMaTK.Text;
-                //string tenDN = txtTendangnhap.Text;
-                //string tenNV = txtTennguoidung.Text;
-                //string diaChi = txtDiachi.Text;
-                //QLTKBLL.Instance.UpdateTTTK(maTK, tenDN, tenNV, diaChi);
-         }
+            string matk = txtMaTK.Text;
+            string tendangnhap = txtTendangnhap.Text;
+            string tennguoidung = txtTennguoidung.Text;
+            string diachi = txtDiachi.Text;
+            QLTKBLL.Instance.UpdateThongtintaikhoan(matk, tendangnhap, tennguoidung, diachi);
+        }
 
         private void btnThoatt_Click(object sender, EventArgs e)
         {

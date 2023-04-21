@@ -32,21 +32,30 @@
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTimkiem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtGioketthuc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtGiobatdau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSoluong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtMacatruc = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dtgvCatruc = new System.Windows.Forms.DataGridView();
-            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Giobatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gioketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapnhat = new Guna.UI2.WinForms.Guna2Button();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
+            this.dtmGioketthuc = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtmGiobatdau = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtmNgaylam = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.MaCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioBatDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangThai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cbbTrangthai = new System.Windows.Forms.ComboBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCatruc)).BeginInit();
@@ -66,7 +75,7 @@
             this.txtTimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimkiem.Location = new System.Drawing.Point(78, 103);
+            this.txtTimkiem.Location = new System.Drawing.Point(69, 13);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PasswordChar = '\0';
@@ -90,69 +99,88 @@
             this.btnTimkiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTimkiem.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnTimkiem.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnTimkiem.Location = new System.Drawing.Point(491, 96);
+            this.btnTimkiem.Location = new System.Drawing.Point(482, 6);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(169, 45);
             this.btnTimkiem.TabIndex = 47;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.TextOffset = new System.Drawing.Point(15, 0);
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel2.Controls.Add(this.txtGioketthuc);
-            this.guna2Panel2.Controls.Add(this.txtGiobatdau);
+            this.guna2Panel2.Controls.Add(this.cbbTrangthai);
+            this.guna2Panel2.Controls.Add(this.dtmNgaylam);
+            this.guna2Panel2.Controls.Add(this.dtmGiobatdau);
+            this.guna2Panel2.Controls.Add(this.dtmGioketthuc);
+            this.guna2Panel2.Controls.Add(this.label6);
+            this.guna2Panel2.Controls.Add(this.txtSoluong);
+            this.guna2Panel2.Controls.Add(this.label5);
+            this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.txtMacatruc);
             this.guna2Panel2.Controls.Add(this.label4);
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2Panel2.Location = new System.Drawing.Point(78, 166);
+            this.guna2Panel2.Location = new System.Drawing.Point(69, 76);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(449, 207);
+            this.guna2Panel2.Size = new System.Drawing.Size(449, 366);
             this.guna2Panel2.TabIndex = 49;
             // 
-            // txtGioketthuc
+            // label6
             // 
-            this.txtGioketthuc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGioketthuc.DefaultText = "";
-            this.txtGioketthuc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGioketthuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGioketthuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGioketthuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGioketthuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGioketthuc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGioketthuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGioketthuc.Location = new System.Drawing.Point(142, 130);
-            this.txtGioketthuc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtGioketthuc.Name = "txtGioketthuc";
-            this.txtGioketthuc.PasswordChar = '\0';
-            this.txtGioketthuc.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtGioketthuc.PlaceholderText = "";
-            this.txtGioketthuc.SelectedText = "";
-            this.txtGioketthuc.Size = new System.Drawing.Size(229, 38);
-            this.txtGioketthuc.TabIndex = 48;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(18, 317);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "Trạng thái";
             // 
-            // txtGiobatdau
+            // txtSoluong
             // 
-            this.txtGiobatdau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGiobatdau.DefaultText = "";
-            this.txtGiobatdau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGiobatdau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGiobatdau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiobatdau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiobatdau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiobatdau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGiobatdau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiobatdau.Location = new System.Drawing.Point(142, 72);
-            this.txtGiobatdau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtGiobatdau.Name = "txtGiobatdau";
-            this.txtGiobatdau.PasswordChar = '\0';
-            this.txtGiobatdau.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtGiobatdau.PlaceholderText = "";
-            this.txtGiobatdau.SelectedText = "";
-            this.txtGiobatdau.Size = new System.Drawing.Size(229, 38);
-            this.txtGiobatdau.TabIndex = 45;
+            this.txtSoluong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSoluong.DefaultText = "";
+            this.txtSoluong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSoluong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSoluong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoluong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoluong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoluong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSoluong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoluong.Location = new System.Drawing.Point(142, 246);
+            this.txtSoluong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSoluong.Name = "txtSoluong";
+            this.txtSoluong.PasswordChar = '\0';
+            this.txtSoluong.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtSoluong.PlaceholderText = "";
+            this.txtSoluong.SelectedText = "";
+            this.txtSoluong.Size = new System.Drawing.Size(229, 38);
+            this.txtSoluong.TabIndex = 52;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(18, 255);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 17);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "Số lượng";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "Ngày làm";
             // 
             // txtMacatruc
             // 
@@ -180,7 +208,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 145);
+            this.label4.Location = new System.Drawing.Point(18, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 39;
@@ -191,7 +219,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 84);
+            this.label2.Location = new System.Drawing.Point(18, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 37;
@@ -211,9 +239,9 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.Controls.Add(this.dtgvCatruc);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(533, 166);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(524, 76);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(433, 207);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(504, 366);
             this.guna2GradientPanel2.TabIndex = 51;
             // 
             // dtgvCatruc
@@ -221,35 +249,19 @@
             this.dtgvCatruc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCatruc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCT,
-            this.Giobatdau,
-            this.Gioketthuc});
-            this.dtgvCatruc.Location = new System.Drawing.Point(3, 4);
+            this.ngayLam,
+            this.gioBatDau,
+            this.gioKetThuc,
+            this.soLuong,
+            this.trangThai});
+            this.dtgvCatruc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvCatruc.Location = new System.Drawing.Point(0, 0);
             this.dtgvCatruc.Name = "dtgvCatruc";
             this.dtgvCatruc.RowHeadersWidth = 51;
             this.dtgvCatruc.RowTemplate.Height = 24;
-            this.dtgvCatruc.Size = new System.Drawing.Size(437, 203);
+            this.dtgvCatruc.Size = new System.Drawing.Size(504, 366);
             this.dtgvCatruc.TabIndex = 0;
-            // 
-            // MaCT
-            // 
-            this.MaCT.HeaderText = "Mã ca trực";
-            this.MaCT.MinimumWidth = 6;
-            this.MaCT.Name = "MaCT";
-            this.MaCT.Width = 125;
-            // 
-            // Giobatdau
-            // 
-            this.Giobatdau.HeaderText = "Giờ bắt đầu";
-            this.Giobatdau.MinimumWidth = 6;
-            this.Giobatdau.Name = "Giobatdau";
-            this.Giobatdau.Width = 125;
-            // 
-            // Gioketthuc
-            // 
-            this.Gioketthuc.HeaderText = "Giờ kết thúc";
-            this.Gioketthuc.MinimumWidth = 6;
-            this.Gioketthuc.Name = "Gioketthuc";
-            this.Gioketthuc.Width = 125;
+            this.dtgvCatruc.SelectionChanged += new System.EventHandler(this.dtgvCatruc_SelectionChanged);
             // 
             // guna2GradientPanel1
             // 
@@ -259,7 +271,7 @@
             this.guna2GradientPanel1.Controls.Add(this.btnThem);
             this.guna2GradientPanel1.FillColor = System.Drawing.SystemColors.ControlLight;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.SystemColors.ControlLight;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(175, 399);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(197, 448);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(670, 75);
             this.guna2GradientPanel1.TabIndex = 52;
@@ -327,6 +339,106 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.TextOffset = new System.Drawing.Point(10, 0);
             // 
+            // dtmGioketthuc
+            // 
+            this.dtmGioketthuc.Checked = true;
+            this.dtmGioketthuc.FillColor = System.Drawing.Color.Silver;
+            this.dtmGioketthuc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtmGioketthuc.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtmGioketthuc.Location = new System.Drawing.Point(142, 191);
+            this.dtmGioketthuc.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtmGioketthuc.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtmGioketthuc.Name = "dtmGioketthuc";
+            this.dtmGioketthuc.Size = new System.Drawing.Size(226, 36);
+            this.dtmGioketthuc.TabIndex = 55;
+            this.dtmGioketthuc.Value = new System.DateTime(2023, 4, 21, 8, 7, 48, 665);
+            // 
+            // dtmGiobatdau
+            // 
+            this.dtmGiobatdau.Checked = true;
+            this.dtmGiobatdau.FillColor = System.Drawing.Color.Silver;
+            this.dtmGiobatdau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtmGiobatdau.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtmGiobatdau.Location = new System.Drawing.Point(142, 130);
+            this.dtmGiobatdau.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtmGiobatdau.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtmGiobatdau.Name = "dtmGiobatdau";
+            this.dtmGiobatdau.Size = new System.Drawing.Size(226, 36);
+            this.dtmGiobatdau.TabIndex = 56;
+            this.dtmGiobatdau.Value = new System.DateTime(2023, 4, 21, 8, 6, 18, 25);
+            // 
+            // dtmNgaylam
+            // 
+            this.dtmNgaylam.Checked = true;
+            this.dtmNgaylam.FillColor = System.Drawing.Color.Silver;
+            this.dtmNgaylam.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtmNgaylam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtmNgaylam.Location = new System.Drawing.Point(142, 71);
+            this.dtmNgaylam.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtmNgaylam.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtmNgaylam.Name = "dtmNgaylam";
+            this.dtmNgaylam.Size = new System.Drawing.Size(226, 36);
+            this.dtmNgaylam.TabIndex = 57;
+            this.dtmNgaylam.Value = new System.DateTime(2023, 4, 21, 8, 6, 18, 25);
+            // 
+            // MaCT
+            // 
+            this.MaCT.DataPropertyName = "maCT";
+            this.MaCT.HeaderText = "Mã ca trực";
+            this.MaCT.MinimumWidth = 6;
+            this.MaCT.Name = "MaCT";
+            this.MaCT.Width = 125;
+            // 
+            // ngayLam
+            // 
+            this.ngayLam.DataPropertyName = "ngayLam";
+            this.ngayLam.HeaderText = "Ngày làm";
+            this.ngayLam.MinimumWidth = 6;
+            this.ngayLam.Name = "ngayLam";
+            this.ngayLam.Width = 125;
+            // 
+            // gioBatDau
+            // 
+            this.gioBatDau.DataPropertyName = "gioBatDau";
+            this.gioBatDau.HeaderText = "Giờ bắt đầu";
+            this.gioBatDau.MinimumWidth = 6;
+            this.gioBatDau.Name = "gioBatDau";
+            this.gioBatDau.Width = 125;
+            // 
+            // gioKetThuc
+            // 
+            this.gioKetThuc.DataPropertyName = "gioKetThuc";
+            this.gioKetThuc.HeaderText = "Giờ kết thúc";
+            this.gioKetThuc.MinimumWidth = 6;
+            this.gioKetThuc.Name = "gioKetThuc";
+            this.gioKetThuc.Width = 125;
+            // 
+            // soLuong
+            // 
+            this.soLuong.DataPropertyName = "soLuong";
+            this.soLuong.HeaderText = "Số lượng";
+            this.soLuong.MinimumWidth = 6;
+            this.soLuong.Name = "soLuong";
+            this.soLuong.Width = 125;
+            // 
+            // trangThai
+            // 
+            this.trangThai.DataPropertyName = "trangThai";
+            this.trangThai.HeaderText = "Trạng thái";
+            this.trangThai.MinimumWidth = 6;
+            this.trangThai.Name = "trangThai";
+            this.trangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.trangThai.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.trangThai.Width = 125;
+            // 
+            // cbbTrangthai
+            // 
+            this.cbbTrangthai.FormattingEnabled = true;
+            this.cbbTrangthai.Location = new System.Drawing.Point(142, 315);
+            this.cbbTrangthai.Name = "cbbTrangthai";
+            this.cbbTrangthai.Size = new System.Drawing.Size(226, 24);
+            this.cbbTrangthai.TabIndex = 58;
+            // 
             // QuanLyCaTruc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -355,8 +467,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiem;
         private Guna.UI2.WinForms.Guna2Button btnTimkiem;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtGioketthuc;
-        private Guna.UI2.WinForms.Guna2TextBox txtGiobatdau;
         private Guna.UI2.WinForms.Guna2TextBox txtMacatruc;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
@@ -367,8 +477,19 @@
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnCapnhat;
         private Guna.UI2.WinForms.Guna2Button btnThem;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtSoluong;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtmNgaylam;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtmGiobatdau;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtmGioketthuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Giobatdau;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gioketthuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayLam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioBatDau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioKetThuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn trangThai;
+        private System.Windows.Forms.ComboBox cbbTrangthai;
     }
 }

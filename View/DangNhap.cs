@@ -17,39 +17,28 @@ namespace DoAnPBL3.View
         {
             InitializeComponent();
         }
-        public bool CheckDN()
-        {
-            if (txtTendangnhap.Text == "" && txtMatkhau.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
-
-            else if (txtMatkhau.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
-            else if (txtTendangnhap.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập tên đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
-            if (rdoQuanly.Checked == false && rdoNhanvien.Checked == false)
-            {
-                MessageBox.Show("Bạn chưa chọn quyền đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
-            return true;
-        }
+       
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
             string tendangnhap = txtTendangnhap.Text;
             string matkhau = txtMatkhau.Text;
             bool vaitro = true;
-            if (rdoQuanly.Checked) vaitro = true;
-            else if (rdoNhanvien.Checked) vaitro = false;
-            if(CheckDN()) QLTKBLL.Instance.DangNhap(tendangnhap, matkhau, vaitro);
+
+            if (rdoQuanly.Checked)
+            {
+                vaitro = true;
+            }
+            else if (rdoNhanvien.Checked)
+            {
+                vaitro = false;
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn quyền đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            QLTKBLL.Instance.DangNhap(tendangnhap, matkhau, vaitro);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -66,6 +55,16 @@ namespace DoAnPBL3.View
             rdoQuanly.Checked = false;
         }
 
-     
+        private void picEye_Click(object sender, EventArgs e)
+        {
+            if (txtMatkhau.PasswordChar == '*')
+            {
+                txtMatkhau.PasswordChar = '\0';
+            }
+            else 
+            { 
+                txtMatkhau.PasswordChar = '*'; 
+            }
+        }
     }
 }

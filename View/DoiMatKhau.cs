@@ -69,7 +69,12 @@ namespace DoAnPBL3
             string matkhaucu = txtMatkhaucu.Text;
             string matkhaumoi = txtMatkhaumoi.Text;
             string xacnhanmatkhau = txtNhaplaimatkhau.Text;
-            QLTKBLL.Instance.Doimatkhau(matkhaucu, matkhaumoi, xacnhanmatkhau);
+            if (MessageBox.Show("Bạn chắc chắn muốn đổi mật khẩu" ,"Thông báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                QLTKBLL.Instance.Doimatkhau(matkhaucu, matkhaumoi, xacnhanmatkhau);
+            }
+            
+            
 
         }
     }

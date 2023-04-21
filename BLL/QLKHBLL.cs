@@ -23,7 +23,7 @@ namespace DoAnPBL3.BLL
             }
             else
             {
-                var list = db.KHACHHANGs.Where(p => p.SDT.Contains(sdt)).ToList();
+                var list = db.KHACHHANGs.Where(p => p.SDT == sdt).ToList();
                 return list;
             }
         }
@@ -39,15 +39,15 @@ namespace DoAnPBL3.BLL
             k.gioiTinh = kh.gioiTinh;
             db.SaveChanges();
         }
-        
+
         public void Add(KHACHHANG kh)
         {
             QLNH_DB db = new QLNH_DB();
             string lastID = db.KHACHHANGs.OrderByDescending(a => a.maKH).Select(p => p.maKH).FirstOrDefault();
             string nextID = "";
-            if(lastID != "") 
+            if (lastID != "")
             {
-               int num = int.Parse(lastID.Replace("KH",""));
+                int num = int.Parse(lastID.Replace("KH", ""));
                 num++;
                 nextID = "KH" + num.ToString("D3");
             }
@@ -55,6 +55,6 @@ namespace DoAnPBL3.BLL
             db.KHACHHANGs.Add(kh);
             db.SaveChanges();
         }
-      
+
     }
 }

@@ -52,32 +52,18 @@ namespace DoAnPBL3
                 txtSDT.Text = dtgvNhanvien.SelectedRows[0].Cells["SDT"].Value.ToString();
                 txtDiachi.Text = dtgvNhanvien.SelectedRows[0].Cells["diaChi"].Value.ToString();
                 txtLuong.Text = Convert.ToDecimal(dtgvNhanvien.SelectedRows[0].Cells["luong"].Value).ToString();
-
             }
+            
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            NHANVIEN nv = new NHANVIEN
+
+            if (string.IsNullOrEmpty(txtMaTK.Text) || string.IsNullOrEmpty(txtMaNV.Text) || string.IsNullOrEmpty(txtTenNV.Text) || string.IsNullOrEmpty(txtCCCD.Text) || string.IsNullOrEmpty(txtSDT.Text) || string.IsNullOrEmpty(txtDiachi.Text) || string.IsNullOrEmpty(txtLuong.Text))
             {
-                maNV = txtMaNV.Text,
-                maTK = txtMaTK.Text,
-                tenNV = txtTenNV.Text,
-                gioiTinh = rdoNam.Checked ? true : false,
-                ngaySinh = dtmNgaysinh.Value,
-                CCCD = txtCCCD.Text,
-                SDT = txtSDT.Text,
-                diaChi = txtDiachi.Text,
-                luong = Convert.ToDecimal(txtLuong.Text),
-
-            };
-            QLNVBLL.Instance.AddNV(nv);
-            MessageBox.Show("Thêm thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnCapnhat_Click(object sender, EventArgs e)
-        {
-            if (dtgvNhanvien.SelectedRows.Count > 0)
+                MessageBox.Show("Thêm không thành công! Vui lòng nhập đầy đủ thông tin!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
             {
                 NHANVIEN nv = new NHANVIEN
                 {
@@ -92,13 +78,43 @@ namespace DoAnPBL3
                     luong = Convert.ToDecimal(txtLuong.Text),
 
                 };
-                QLNVBLL.Instance.UpdateNV(nv);
-                MessageBox.Show("Cập nhật thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                QLNVBLL.Instance.AddNV(nv);
+                MessageBox.Show("Thêm thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCapnhat_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMaTK.Text) || string.IsNullOrEmpty(txtMaNV.Text) || string.IsNullOrEmpty(txtTenNV.Text) || string.IsNullOrEmpty(txtCCCD.Text) || string.IsNullOrEmpty(txtSDT.Text) || string.IsNullOrEmpty(txtDiachi.Text) || string.IsNullOrEmpty(txtLuong.Text))
+            {
+                MessageBox.Show("Cập nhật không thành công! Vui lòng nhập đầy đủ thông tin!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn 1 dòng để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (dtgvNhanvien.SelectedRows.Count > 0)
+                {
+                    NHANVIEN nv = new NHANVIEN
+                    {
+                        maNV = txtMaNV.Text,
+                        maTK = txtMaTK.Text,
+                        tenNV = txtTenNV.Text,
+                        gioiTinh = rdoNam.Checked ? true : false,
+                        ngaySinh = dtmNgaysinh.Value,
+                        CCCD = txtCCCD.Text,
+                        SDT = txtSDT.Text,
+                        diaChi = txtDiachi.Text,
+                        luong = Convert.ToDecimal(txtLuong.Text),
+
+                    };
+                    QLNVBLL.Instance.UpdateNV(nv);
+                    MessageBox.Show("Cập nhật thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn 1 dòng để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
+            
         }
     }
 }

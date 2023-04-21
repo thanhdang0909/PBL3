@@ -42,7 +42,34 @@ namespace DoAnPBL3
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-           Application.Exit();
+            this.Close();
+        }
+
+        private void TrangChuAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắc muốn đăng xuất?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                List<Form> formsToClose = new List<Form>();
+                foreach (Form form in Application.OpenForms)
+                {
+                    if (form != this)
+                    {
+                        formsToClose.Add(form);
+                    }
+                }
+
+                foreach (Form form in formsToClose)
+                {
+                    form.Close();
+                }
+
+                DangNhap formDangNhap = new DangNhap();
+                formDangNhap.Show();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

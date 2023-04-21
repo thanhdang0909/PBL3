@@ -12,12 +12,14 @@ namespace DoAnPBL3.DTO
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagram
+    public partial class CHITIETBANPHUCVU1
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public string maPV { get; set; }
+        public string maMA { get; set; }
+        public int soLuong { get; set; }
+        public decimal giaMA { get; set; }
+    
+        public virtual BANPHUCVU1 BANPHUCVU { get; set; }
+        public virtual MONAN1 MONAN { get; set; }
     }
 }

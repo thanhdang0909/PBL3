@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoAnPBL3.BLL
 {
-    public class QLHD
+    public class QLHDBLL
     {
 
     }

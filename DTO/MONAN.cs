@@ -23,9 +23,10 @@ namespace DoAnPBL3.DTO
         public string maMA { get; set; }
         public string tenMA { get; set; }
         public string maLM { get; set; }
-        public decimal GiaMA { get; set; }
+        public decimal giaMA { get; set; }
         public string donViTinh { get; set; }
-        public byte[] AnhMA { get; set; }
+        public byte[] anhMA { get; set; }
+        public bool coXoa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETBANPHUCVU> CHITIETBANPHUCVUs { get; set; }

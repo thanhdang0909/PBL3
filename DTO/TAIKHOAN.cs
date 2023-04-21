@@ -19,7 +19,6 @@ namespace DoAnPBL3.DTO
         {
             this.BANPHUCVUs = new HashSet<BANPHUCVU>();
             this.HOADONs = new HashSet<HOADON>();
-            this.NHANVIENs = new HashSet<NHANVIEN>();
             this.CHITIETCALAMs = new HashSet<CHITIETCALAM>();
         }
     
@@ -27,13 +26,12 @@ namespace DoAnPBL3.DTO
         public string tenDangNhap { get; set; }
         public string matKhau { get; set; }
         public bool vaiTro { get; set; }
+        public bool coXoa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BANPHUCVU> BANPHUCVUs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETCALAM> CHITIETCALAMs { get; set; }
     }

@@ -36,7 +36,6 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtDonvitinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtGia = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMaloai = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenmonan = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMamonan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,35 +45,36 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnHuy = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCapnhat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTimkiem = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCapnhat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvMonan = new System.Windows.Forms.DataGridView();
             this.maMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maLM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anhMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbMaloai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonan)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BorderRadius = 20;
+            this.guna2GradientPanel1.Controls.Add(this.cbbMaloai);
             this.guna2GradientPanel1.Controls.Add(this.groupBox1);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button1);
             this.guna2GradientPanel1.Controls.Add(this.txtDonvitinh);
             this.guna2GradientPanel1.Controls.Add(this.txtGia);
-            this.guna2GradientPanel1.Controls.Add(this.txtMaloai);
             this.guna2GradientPanel1.Controls.Add(this.txtTenmonan);
             this.guna2GradientPanel1.Controls.Add(this.txtMamonan);
             this.guna2GradientPanel1.Controls.Add(this.label5);
@@ -174,28 +174,6 @@
             this.txtGia.SelectedText = "";
             this.txtGia.Size = new System.Drawing.Size(220, 34);
             this.txtGia.TabIndex = 8;
-            // 
-            // txtMaloai
-            // 
-            this.txtMaloai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaloai.DefaultText = "";
-            this.txtMaloai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMaloai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMaloai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaloai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaloai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaloai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaloai.ForeColor = System.Drawing.Color.Black;
-            this.txtMaloai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaloai.Location = new System.Drawing.Point(145, 77);
-            this.txtMaloai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMaloai.Name = "txtMaloai";
-            this.txtMaloai.PasswordChar = '\0';
-            this.txtMaloai.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMaloai.PlaceholderText = "";
-            this.txtMaloai.SelectedText = "";
-            this.txtMaloai.Size = new System.Drawing.Size(220, 34);
-            this.txtMaloai.TabIndex = 7;
             // 
             // txtTenmonan
             // 
@@ -328,6 +306,69 @@
             this.panel1.Size = new System.Drawing.Size(199, 320);
             this.panel1.TabIndex = 47;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.BorderRadius = 15;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnXoa.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnXoa.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnXoa.Location = new System.Drawing.Point(21, 179);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(146, 45);
+            this.btnXoa.TabIndex = 51;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // btnCapnhat
+            // 
+            this.btnCapnhat.BorderRadius = 15;
+            this.btnCapnhat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCapnhat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCapnhat.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnCapnhat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapnhat.ForeColor = System.Drawing.Color.Black;
+            this.btnCapnhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapnhat.Image")));
+            this.btnCapnhat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCapnhat.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnCapnhat.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnCapnhat.Location = new System.Drawing.Point(21, 97);
+            this.btnCapnhat.Name = "btnCapnhat";
+            this.btnCapnhat.Size = new System.Drawing.Size(146, 45);
+            this.btnCapnhat.TabIndex = 50;
+            this.btnCapnhat.Text = "Cập nhật";
+            this.btnCapnhat.TextOffset = new System.Drawing.Point(20, 0);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BorderRadius = 15;
+            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.Black;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThem.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btnThem.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnThem.Location = new System.Drawing.Point(21, 21);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(146, 45);
+            this.btnThem.TabIndex = 49;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextOffset = new System.Drawing.Point(10, 0);
+            // 
             // txtTimkiem
             // 
             this.txtTimkiem.BackColor = System.Drawing.Color.Transparent;
@@ -371,98 +412,37 @@
             this.btnTimkiem.TabIndex = 54;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.TextOffset = new System.Drawing.Point(15, 0);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BorderRadius = 15;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.FillColor = System.Drawing.Color.DarkSalmon;
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.Black;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThem.ImageOffset = new System.Drawing.Point(5, 0);
-            this.btnThem.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnThem.Location = new System.Drawing.Point(21, 21);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(146, 45);
-            this.btnThem.TabIndex = 49;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // btnCapnhat
-            // 
-            this.btnCapnhat.BorderRadius = 15;
-            this.btnCapnhat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCapnhat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCapnhat.FillColor = System.Drawing.Color.DarkSalmon;
-            this.btnCapnhat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapnhat.ForeColor = System.Drawing.Color.Black;
-            this.btnCapnhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapnhat.Image")));
-            this.btnCapnhat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCapnhat.ImageOffset = new System.Drawing.Point(5, 0);
-            this.btnCapnhat.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCapnhat.Location = new System.Drawing.Point(21, 97);
-            this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Size = new System.Drawing.Size(146, 45);
-            this.btnCapnhat.TabIndex = 50;
-            this.btnCapnhat.Text = "Cập nhật";
-            this.btnCapnhat.TextOffset = new System.Drawing.Point(20, 0);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BorderRadius = 15;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.FillColor = System.Drawing.Color.DarkSalmon;
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoa.ImageOffset = new System.Drawing.Point(5, 0);
-            this.btnXoa.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnXoa.Location = new System.Drawing.Point(21, 179);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(146, 45);
-            this.btnXoa.TabIndex = 51;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dtgvMonan);
             this.panel2.Location = new System.Drawing.Point(32, 401);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1034, 190);
             this.panel2.TabIndex = 56;
             // 
-            // dataGridView1
+            // dtgvMonan
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvMonan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMonan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maMA,
             this.maLM,
             this.tenMA,
             this.donViTinh,
-            this.Column1,
-            this.Column2});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1034, 190);
-            this.dataGridView1.TabIndex = 0;
+            this.giaMA,
+            this.anhMA});
+            this.dtgvMonan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvMonan.Location = new System.Drawing.Point(0, 0);
+            this.dtgvMonan.Name = "dtgvMonan";
+            this.dtgvMonan.RowHeadersWidth = 51;
+            this.dtgvMonan.RowTemplate.Height = 24;
+            this.dtgvMonan.Size = new System.Drawing.Size(1034, 190);
+            this.dtgvMonan.TabIndex = 0;
             // 
             // maMA
             // 
+            this.maMA.DataPropertyName = "mamA";
             this.maMA.HeaderText = "Mã món ăn";
             this.maMA.MinimumWidth = 6;
             this.maMA.Name = "maMA";
@@ -470,6 +450,7 @@
             // 
             // maLM
             // 
+            this.maLM.DataPropertyName = "maLM";
             this.maLM.HeaderText = "Mã loại món";
             this.maLM.MinimumWidth = 6;
             this.maLM.Name = "maLM";
@@ -477,6 +458,7 @@
             // 
             // tenMA
             // 
+            this.tenMA.DataPropertyName = "tenMA";
             this.tenMA.HeaderText = "Tên món ăn";
             this.tenMA.MinimumWidth = 6;
             this.tenMA.Name = "tenMA";
@@ -484,24 +466,42 @@
             // 
             // donViTinh
             // 
+            this.donViTinh.DataPropertyName = "donViTinh";
             this.donViTinh.HeaderText = "Đơn vị tính";
             this.donViTinh.MinimumWidth = 6;
             this.donViTinh.Name = "donViTinh";
             this.donViTinh.Width = 125;
             // 
-            // Column1
+            // giaMA
             // 
-            this.Column1.HeaderText = "Giá";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.giaMA.DataPropertyName = "giaMA";
+            this.giaMA.HeaderText = "Giá";
+            this.giaMA.MinimumWidth = 6;
+            this.giaMA.Name = "giaMA";
+            this.giaMA.Width = 125;
             // 
-            // Column2
+            // anhMA
             // 
-            this.Column2.HeaderText = "Ảnh";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.anhMA.DataPropertyName = "anhMA";
+            this.anhMA.HeaderText = "Ảnh";
+            this.anhMA.MinimumWidth = 6;
+            this.anhMA.Name = "anhMA";
+            this.anhMA.Width = 125;
+            // 
+            // cbbMaloai
+            // 
+            this.cbbMaloai.BackColor = System.Drawing.Color.Transparent;
+            this.cbbMaloai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbMaloai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMaloai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbMaloai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbMaloai.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbMaloai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbMaloai.ItemHeight = 30;
+            this.cbbMaloai.Location = new System.Drawing.Point(145, 77);
+            this.cbbMaloai.Name = "cbbMaloai";
+            this.cbbMaloai.Size = new System.Drawing.Size(220, 36);
+            this.cbbMaloai.TabIndex = 14;
             // 
             // ThemMonAn
             // 
@@ -523,7 +523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,7 +536,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtDonvitinh;
         private Guna.UI2.WinForms.Guna2TextBox txtGia;
-        private Guna.UI2.WinForms.Guna2TextBox txtMaloai;
         private Guna.UI2.WinForms.Guna2TextBox txtTenmonan;
         private Guna.UI2.WinForms.Guna2TextBox txtMamonan;
         private System.Windows.Forms.Label label5;
@@ -551,12 +550,13 @@
         private Guna.UI2.WinForms.Guna2Button btnCapnhat;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvMonan;
         private System.Windows.Forms.DataGridViewTextBoxColumn maMA;
         private System.Windows.Forms.DataGridViewTextBoxColumn maLM;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenMA;
         private System.Windows.Forms.DataGridViewTextBoxColumn donViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaMA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anhMA;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbMaloai;
     }
 }

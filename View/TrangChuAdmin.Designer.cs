@@ -117,9 +117,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(768, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(769, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(325, 640);
+            this.pictureBox1.Size = new System.Drawing.Size(324, 640);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
@@ -129,7 +129,7 @@
             this.pnlTrangChuAdmin.Controls.Add(this.btnTTTK);
             this.pnlTrangChuAdmin.Controls.Add(this.btnDangXuat);
             this.pnlTrangChuAdmin.Controls.Add(this.btnDoiMK);
-            this.pnlTrangChuAdmin.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlTrangChuAdmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTrangChuAdmin.Location = new System.Drawing.Point(0, 0);
             this.pnlTrangChuAdmin.Name = "pnlTrangChuAdmin";
             this.pnlTrangChuAdmin.Size = new System.Drawing.Size(768, 640);
@@ -146,6 +146,7 @@
             this.Name = "TrangChuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChuAdmin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TrangChuAdmin_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlTrangChuAdmin.ResumeLayout(false);
             this.ResumeLayout(false);

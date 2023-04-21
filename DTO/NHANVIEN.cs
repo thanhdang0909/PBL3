@@ -23,7 +23,6 @@ namespace DoAnPBL3.DTO
         public string SDT { get; set; }
         public string diaChi { get; set; }
         public decimal luong { get; set; }
-    
-        public virtual TAIKHOAN TAIKHOAN { get; set; }
+        public Nullable<bool> coXoa { get; set; }
     }
 }
