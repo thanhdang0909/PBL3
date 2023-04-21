@@ -290,11 +290,11 @@
     <Compile Include="View\UINhahangAdmin.Designer.cs">
       <DependentUpon>UINhahangAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UINhaHangNV.cs">
+    <Compile Include="View\UINhahangNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\UINhaHangNV.Designer.cs">
-      <DependentUpon>UINhaHangNV.cs</DependentUpon>
+    <Compile Include="View\UINhahangNhanVien.Designer.cs">
+      <DependentUpon>UINhahangNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -409,8 +409,8 @@
     <EmbeddedResource Include="View\UINhahangAdmin.resx">
       <DependentUpon>UINhahangAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UINhaHangNV.resx">
-      <DependentUpon>UINhaHangNV.cs</DependentUpon>
+    <EmbeddedResource Include="View\UINhahangNhanVien.resx">
+      <DependentUpon>UINhahangNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TrangChuNV.resx">
       <DependentUpon>TrangChuNV.cs</DependentUpon>

@@ -29,7 +29,7 @@ namespace DoAnPBL3.BLL
                 switch (vaitro)
                 {
                     case false:
-                        new UINhaHangNV().ShowDialog();
+                        new UINhahangNhanVien().ShowDialog();
                         break;
                     case true:
                         new UINhahangAdmin().ShowDialog();
