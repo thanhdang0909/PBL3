@@ -429,7 +429,7 @@
           <Property Name="maMA" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="tenMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="GiaMA" Type="Decimal" Nullable="false" />
+          <Property Name="GiaMA" Type="Double" Nullable="false" />
           <Property Name="donViTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="MONAN" ToRole="CHITIETBANPHUCVU" />
           <NavigationProperty Name="LOAIMON" Relationship="Self.FK_MONAN_LOAIMON" FromRole="MONAN" ToRole="LOAIMON" />
@@ -442,12 +442,12 @@
           <Property Name="maNV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="tenNV" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="gioiTinh" Type="String" Nullable="false" />
+          <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
           <Property Name="ngaySinh" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="diaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="luong" Type="Decimal" Nullable="false" />
+          <Property Name="luong" Type="Double" Nullable="false" />
           <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_NHANVIEN_TAIKHOAN" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
           <Property Name="coXoa" Type="Boolean" />
         </EntityType>
