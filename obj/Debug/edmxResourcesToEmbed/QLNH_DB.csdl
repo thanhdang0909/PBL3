@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="HTHTKDNHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="NhaHangModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="BANAN">
     <Key>
       <PropertyRef Name="maBan" />
     </Key>
     <Property Name="maBan" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="maPV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="soGhe" Type="Int32" Nullable="false" />
     <Property Name="trangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="ghiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="BANPHUCVU" Relationship="Self.FK_BANAN_BANPHUCVU" FromRole="BANAN" ToRole="BANPHUCVU" />
+    <Property Name="ghiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="coXoa" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="BANPHUCVUs" Relationship="Self.CHITIETDATBAN" FromRole="BANAN" ToRole="BANPHUCVU" />
   </EntityType>
   <EntityType Name="BANPHUCVU">
     <Key>
@@ -20,12 +20,12 @@
     <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="soNguoi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="thoiGianVao" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="BANANs" Relationship="Self.FK_BANAN_BANPHUCVU" FromRole="BANPHUCVU" ToRole="BANAN" />
+    <Property Name="coXoa" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="BANPHUCVU" ToRole="KHACHHANG" />
     <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_BANPHUCVU_TAIKHOAN" FromRole="BANPHUCVU" ToRole="TAIKHOAN" />
     <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_BANPHUCVU" FromRole="BANPHUCVU" ToRole="CHITIETBANPHUCVU" />
     <NavigationProperty Name="HOADONs" Relationship="Self.FK_HOADON_BANPHUCVU" FromRole="BANPHUCVU" ToRole="HOADON" />
+    <NavigationProperty Name="BANANs" Relationship="Self.CHITIETDATBAN" FromRole="BANPHUCVU" ToRole="BANAN" />
   </EntityType>
   <EntityType Name="CHITIETBANPHUCVU">
     <Key>
@@ -35,7 +35,7 @@
     <Property Name="maPV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="maMA" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="soLuong" Type="Int32" Nullable="false" />
-    <Property Name="giaMA" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="giaMA" Type="Double" Nullable="false" />
     <NavigationProperty Name="BANPHUCVU" Relationship="Self.FK_CHITIETBANPHUCVU_BANPHUCVU" FromRole="CHITIETBANPHUCVU" ToRole="BANPHUCVU" />
     <NavigationProperty Name="MONAN" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="CHITIETBANPHUCVU" ToRole="MONAN" />
   </EntityType>
@@ -48,7 +48,7 @@
     <Property Name="gioBatDau" Type="Time" Nullable="false" Precision="7" />
     <Property Name="gioKetThuc" Type="Time" Nullable="false" Precision="7" />
     <Property Name="trangThai" Type="Boolean" Nullable="false" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="soLuong" Type="Int32" Nullable="false" />
     <NavigationProperty Name="TAIKHOANs" Relationship="Self.PHANCONGCALAM" FromRole="CHITIETCALAM" ToRole="TAIKHOAN" />
   </EntityType>
   <EntityType Name="HOADON">
@@ -59,7 +59,7 @@
     <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="maPV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="ngayThanhToan" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="tongTien" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tongTien" Type="Double" Nullable="false" />
     <NavigationProperty Name="BANPHUCVU" Relationship="Self.FK_HOADON_BANPHUCVU" FromRole="HOADON" ToRole="BANPHUCVU" />
     <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_HOADON_TAIKHOAN" FromRole="HOADON" ToRole="TAIKHOAN" />
   </EntityType>
@@ -72,7 +72,7 @@
     <Property Name="SDT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
     <Property Name="diaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="diemTichLuy" Type="Int32" Nullable="false" />
     <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_KHACHHANG" FromRole="KHACHHANG" ToRole="BANPHUCVU" />
   </EntityType>
   <EntityType Name="LOAIMON">
@@ -80,8 +80,8 @@
       <PropertyRef Name="maLM" />
     </Key>
     <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="coXoa" Type="Boolean" />
     <NavigationProperty Name="MONANs" Relationship="Self.FK_MONAN_LOAIMON" FromRole="LOAIMON" ToRole="MONAN" />
   </EntityType>
   <EntityType Name="MONAN">
@@ -91,9 +91,9 @@
     <Property Name="maMA" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="tenMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="maLM" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="GiaMA" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="GiaMA" Type="Double" Nullable="false" />
     <Property Name="donViTinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="AnhMA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="coXoa" Type="Boolean" />
     <NavigationProperty Name="CHITIETBANPHUCVUs" Relationship="Self.FK_CHITIETBANPHUCVU_MONAN" FromRole="MONAN" ToRole="CHITIETBANPHUCVU" />
     <NavigationProperty Name="LOAIMON" Relationship="Self.FK_MONAN_LOAIMON" FromRole="MONAN" ToRole="LOAIMON" />
   </EntityType>
@@ -104,13 +104,13 @@
     <Property Name="maNV" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="maTK" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="tenNV" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="gioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gioiTinh" Type="Boolean" Nullable="false" />
     <Property Name="ngaySinh" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="diaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="luong" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="luong" Type="Double" Nullable="false" />
+    <Property Name="coXoa" Type="Boolean" />
     <NavigationProperty Name="TAIKHOAN" Relationship="Self.FK_NHANVIEN_TAIKHOAN" FromRole="NHANVIEN" ToRole="TAIKHOAN" />
   </EntityType>
   <EntityType Name="TAIKHOAN">
@@ -121,24 +121,12 @@
     <Property Name="tenDangNhap" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="matKhau" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="vaiTro" Type="Boolean" Nullable="false" />
-    <Property Name="unique_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="coXoa" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="BANPHUCVUs" Relationship="Self.FK_BANPHUCVU_TAIKHOAN" FromRole="TAIKHOAN" ToRole="BANPHUCVU" />
     <NavigationProperty Name="HOADONs" Relationship="Self.FK_HOADON_TAIKHOAN" FromRole="TAIKHOAN" ToRole="HOADON" />
     <NavigationProperty Name="NHANVIENs" Relationship="Self.FK_NHANVIEN_TAIKHOAN" FromRole="TAIKHOAN" ToRole="NHANVIEN" />
     <NavigationProperty Name="CHITIETCALAMs" Relationship="Self.PHANCONGCALAM" FromRole="TAIKHOAN" ToRole="CHITIETCALAM" />
   </EntityType>
-  <Association Name="FK_BANAN_BANPHUCVU">
-    <End Role="BANPHUCVU" Type="Self.BANPHUCVU" Multiplicity="1" />
-    <End Role="BANAN" Type="Self.BANAN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BANPHUCVU">
-        <PropertyRef Name="maPV" />
-      </Principal>
-      <Dependent Role="BANAN">
-        <PropertyRef Name="maPV" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_BANPHUCVU_KHACHHANG">
     <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
     <End Role="BANPHUCVU" Type="Self.BANPHUCVU" Multiplicity="*" />
@@ -235,11 +223,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="CHITIETDATBAN">
+    <End Role="BANAN" Type="Self.BANAN" Multiplicity="*" />
+    <End Role="BANPHUCVU" Type="Self.BANPHUCVU" Multiplicity="*" />
+  </Association>
   <Association Name="PHANCONGCALAM">
     <End Role="CHITIETCALAM" Type="Self.CHITIETCALAM" Multiplicity="*" />
     <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="HTHTKDNH" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="QLNH" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="BANANs" EntityType="Self.BANAN" />
     <EntitySet Name="BANPHUCVUs" EntityType="Self.BANPHUCVU" />
     <EntitySet Name="CHITIETBANPHUCVUs" EntityType="Self.CHITIETBANPHUCVU" />
@@ -250,10 +242,6 @@
     <EntitySet Name="MONANs" EntityType="Self.MONAN" />
     <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
     <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
-    <AssociationSet Name="FK_BANAN_BANPHUCVU" Association="Self.FK_BANAN_BANPHUCVU">
-      <End Role="BANPHUCVU" EntitySet="BANPHUCVUs" />
-      <End Role="BANAN" EntitySet="BANANs" />
-    </AssociationSet>
     <AssociationSet Name="FK_BANPHUCVU_KHACHHANG" Association="Self.FK_BANPHUCVU_KHACHHANG">
       <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
       <End Role="BANPHUCVU" EntitySet="BANPHUCVUs" />
@@ -285,6 +273,10 @@
     <AssociationSet Name="FK_NHANVIEN_TAIKHOAN" Association="Self.FK_NHANVIEN_TAIKHOAN">
       <End Role="TAIKHOAN" EntitySet="TAIKHOANs" />
       <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+    </AssociationSet>
+    <AssociationSet Name="CHITIETDATBAN" Association="Self.CHITIETDATBAN">
+      <End Role="BANAN" EntitySet="BANANs" />
+      <End Role="BANPHUCVU" EntitySet="BANPHUCVUs" />
     </AssociationSet>
     <AssociationSet Name="PHANCONGCALAM" Association="Self.PHANCONGCALAM">
       <End Role="CHITIETCALAM" EntitySet="CHITIETCALAMs" />

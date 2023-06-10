@@ -17,7 +17,7 @@ namespace DoAnPBL3.DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BANAN()
         {
-            this.BANPHUCVUs = new HashSet<BANPHUCVU>();
+            this.CHITIETDATBANs = new HashSet<CHITIETDATBAN>();
         }
     
         public string maBan { get; set; }
@@ -27,6 +27,6 @@ namespace DoAnPBL3.DTO
         public bool coXoa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BANPHUCVU> BANPHUCVUs { get; set; }
+        public virtual ICollection<CHITIETDATBAN> CHITIETDATBANs { get; set; }
     }
 }

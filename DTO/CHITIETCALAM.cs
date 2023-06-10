@@ -17,7 +17,7 @@ namespace DoAnPBL3.DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CHITIETCALAM()
         {
-            this.TAIKHOANs = new HashSet<TAIKHOAN>();
+            this.PHANCONGCALAMs = new HashSet<PHANCONGCALAM>();
         }
     
         public string maCT { get; set; }
@@ -28,6 +28,6 @@ namespace DoAnPBL3.DTO
         public int soLuong { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TAIKHOAN> TAIKHOANs { get; set; }
+        public virtual ICollection<PHANCONGCALAM> PHANCONGCALAMs { get; set; }
     }
 }

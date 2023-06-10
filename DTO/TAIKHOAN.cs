@@ -19,14 +19,16 @@ namespace DoAnPBL3.DTO
         {
             this.BANPHUCVUs = new HashSet<BANPHUCVU>();
             this.HOADONs = new HashSet<HOADON>();
+            this.LUONGNHANVIENs = new HashSet<LUONGNHANVIEN>();
             this.NHANVIENs = new HashSet<NHANVIEN>();
-            this.CHITIETCALAMs = new HashSet<CHITIETCALAM>();
+            this.PHANCONGCALAMs = new HashSet<PHANCONGCALAM>();
         }
     
         public string maTK { get; set; }
         public string tenDangNhap { get; set; }
         public string matKhau { get; set; }
         public bool vaiTro { get; set; }
+        public string kyTu { get; set; }
         public bool coXoa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -34,8 +36,10 @@ namespace DoAnPBL3.DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LUONGNHANVIEN> LUONGNHANVIENs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETCALAM> CHITIETCALAMs { get; set; }
+        public virtual ICollection<PHANCONGCALAM> PHANCONGCALAMs { get; set; }
     }
 }

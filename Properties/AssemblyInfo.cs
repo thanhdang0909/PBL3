@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DoAnPBL3")]
+[assembly: AssemblyTitle("QuanLySinhVien")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DoAnPBL3")]
+[assembly: AssemblyProduct("QuanLySinhVien")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("683878b7-326f-434f-8ec7-ff021db946c5")]
+[assembly: Guid("c5929d11-312b-42c1-9518-ee3de3b62ac3")]
 
 // Version information for an assembly consists of the following four values:
 //

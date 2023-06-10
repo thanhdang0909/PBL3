@@ -18,24 +18,22 @@ namespace DoAnPBL3.DTO
         public BANPHUCVU()
         {
             this.CHITIETBANPHUCVUs = new HashSet<CHITIETBANPHUCVU>();
+            this.CHITIETDATBANs = new HashSet<CHITIETDATBAN>();
             this.HOADONs = new HashSet<HOADON>();
-            this.BANANs = new HashSet<BANAN>();
         }
     
         public string maPV { get; set; }
         public string maKH { get; set; }
         public string maTK { get; set; }
-        public string soNguoi { get; set; }
         public System.DateTime thoiGianVao { get; set; }
-        public bool coXoa { get; set; }
     
         public virtual KHACHHANG KHACHHANG { get; set; }
         public virtual TAIKHOAN TAIKHOAN { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETBANPHUCVU> CHITIETBANPHUCVUs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADONs { get; set; }
+        public virtual ICollection<CHITIETDATBAN> CHITIETDATBANs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BANAN> BANANs { get; set; }
+        public virtual ICollection<HOADON> HOADONs { get; set; }
     }
 }

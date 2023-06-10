@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="HTHTKDNHModelStoreContainer" CdmEntityContainer="HTHTKDNH">
+  <EntityContainerMapping StorageEntityContainer="NhaHangModelStoreContainer" CdmEntityContainer="QLNH">
     <EntitySetMapping Name="BANANs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.BANAN">
+      <EntityTypeMapping TypeName="NhaHangModel.BANAN">
         <MappingFragment StoreEntitySet="BANAN">
           <ScalarProperty Name="maBan" ColumnName="maBan" />
-          <ScalarProperty Name="maPV" ColumnName="maPV" />
           <ScalarProperty Name="soGhe" ColumnName="soGhe" />
           <ScalarProperty Name="trangThai" ColumnName="trangThai" />
           <ScalarProperty Name="ghiChu" ColumnName="ghiChu" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BANPHUCVUs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.BANPHUCVU">
+      <EntityTypeMapping TypeName="NhaHangModel.BANPHUCVU">
         <MappingFragment StoreEntitySet="BANPHUCVU">
           <ScalarProperty Name="maPV" ColumnName="maPV" />
           <ScalarProperty Name="maKH" ColumnName="maKH" />
           <ScalarProperty Name="maTK" ColumnName="maTK" />
           <ScalarProperty Name="soNguoi" ColumnName="soNguoi" />
           <ScalarProperty Name="thoiGianVao" ColumnName="thoiGianVao" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CHITIETBANPHUCVUs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.CHITIETBANPHUCVU">
+      <EntityTypeMapping TypeName="NhaHangModel.CHITIETBANPHUCVU">
         <MappingFragment StoreEntitySet="CHITIETBANPHUCVU">
           <ScalarProperty Name="maPV" ColumnName="maPV" />
           <ScalarProperty Name="maMA" ColumnName="maMA" />
@@ -35,19 +35,19 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CHITIETCALAMs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.CHITIETCALAM">
+      <EntityTypeMapping TypeName="NhaHangModel.CHITIETCALAM">
         <MappingFragment StoreEntitySet="CHITIETCALAM">
           <ScalarProperty Name="maCT" ColumnName="maCT" />
           <ScalarProperty Name="ngayLam" ColumnName="ngayLam" />
           <ScalarProperty Name="gioBatDau" ColumnName="gioBatDau" />
           <ScalarProperty Name="gioKetThuc" ColumnName="gioKetThuc" />
           <ScalarProperty Name="trangThai" ColumnName="trangThai" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="soLuong" ColumnName="soLuong" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HOADONs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.HOADON">
+      <EntityTypeMapping TypeName="NhaHangModel.HOADON">
         <MappingFragment StoreEntitySet="HOADON">
           <ScalarProperty Name="maHD" ColumnName="maHD" />
           <ScalarProperty Name="maTK" ColumnName="maTK" />
@@ -58,40 +58,40 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="KHACHHANGs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.KHACHHANG">
+      <EntityTypeMapping TypeName="NhaHangModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
           <ScalarProperty Name="maKH" ColumnName="maKH" />
           <ScalarProperty Name="tenKH" ColumnName="tenKH" />
           <ScalarProperty Name="SDT" ColumnName="SDT" />
           <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
           <ScalarProperty Name="diaChi" ColumnName="diaChi" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="diemTichLuy" ColumnName="diemTichLuy" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="LOAIMONs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.LOAIMON">
+      <EntityTypeMapping TypeName="NhaHangModel.LOAIMON">
         <MappingFragment StoreEntitySet="LOAIMON">
           <ScalarProperty Name="maLM" ColumnName="maLM" />
           <ScalarProperty Name="tenLM" ColumnName="tenLM" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MONANs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.MONAN">
+      <EntityTypeMapping TypeName="NhaHangModel.MONAN">
         <MappingFragment StoreEntitySet="MONAN">
           <ScalarProperty Name="maMA" ColumnName="maMA" />
           <ScalarProperty Name="tenMA" ColumnName="tenMA" />
           <ScalarProperty Name="maLM" ColumnName="maLM" />
           <ScalarProperty Name="GiaMA" ColumnName="GiaMA" />
           <ScalarProperty Name="donViTinh" ColumnName="donViTinh" />
-          <ScalarProperty Name="AnhMA" ColumnName="AnhMA" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NHANVIENs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.NHANVIEN">
+      <EntityTypeMapping TypeName="NhaHangModel.NHANVIEN">
         <MappingFragment StoreEntitySet="NHANVIEN">
           <ScalarProperty Name="maNV" ColumnName="maNV" />
           <ScalarProperty Name="maTK" ColumnName="maTK" />
@@ -102,22 +102,30 @@
           <ScalarProperty Name="SDT" ColumnName="SDT" />
           <ScalarProperty Name="diaChi" ColumnName="diaChi" />
           <ScalarProperty Name="luong" ColumnName="luong" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TAIKHOANs">
-      <EntityTypeMapping TypeName="HTHTKDNHModel.TAIKHOAN">
+      <EntityTypeMapping TypeName="NhaHangModel.TAIKHOAN">
         <MappingFragment StoreEntitySet="TAIKHOAN">
           <ScalarProperty Name="maTK" ColumnName="maTK" />
           <ScalarProperty Name="tenDangNhap" ColumnName="tenDangNhap" />
           <ScalarProperty Name="matKhau" ColumnName="matKhau" />
           <ScalarProperty Name="vaiTro" ColumnName="vaiTro" />
-          <ScalarProperty Name="unique_ID" ColumnName="unique_ID" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="PHANCONGCALAM" TypeName="HTHTKDNHModel.PHANCONGCALAM" StoreEntitySet="PHANCONGCALAM">
+    <AssociationSetMapping Name="CHITIETDATBAN" TypeName="NhaHangModel.CHITIETDATBAN" StoreEntitySet="CHITIETDATBAN">
+      <EndProperty Name="BANAN">
+        <ScalarProperty Name="maBan" ColumnName="maBan" />
+      </EndProperty>
+      <EndProperty Name="BANPHUCVU">
+        <ScalarProperty Name="maPV" ColumnName="maPV" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PHANCONGCALAM" TypeName="NhaHangModel.PHANCONGCALAM" StoreEntitySet="PHANCONGCALAM">
       <EndProperty Name="CHITIETCALAM">
         <ScalarProperty Name="maCT" ColumnName="maCT" />
       </EndProperty>

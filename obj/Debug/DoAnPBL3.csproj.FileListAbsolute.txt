@@ -56,49 +56,26 @@ D:\DoAnPBL3\bin\Debug\EntityFramework.xml
 D:\DoAnPBL3\bin\Debug\EntityFramework.SqlServer.xml
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.BanAnAdmin.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.ChuyenBan.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.DangNhap.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.DatBan.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.DoiMatKhau.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.HoaDon.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.InHoaDon.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.MonAn.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.Properties.Resources.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.BanAn.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ChiTietDatBan.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ChiTietHoaDon.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.GopBan.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.KhachHang.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.NuocUong.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyCaTruc.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThemMonAn.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.ThongKeThucDon.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.TrangMieng.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.UI.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.UINhaHangNV.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.XemLichSuDatBanAdmin.resources
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.csproj.CopyComplete
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.exe
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.pdb
 D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThucDon.resources
-D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.DatBanKH.resources
 D:\DoAnPBL03\PBL03\bin\Debug\DoAnPBL3.exe.config
 D:\DoAnPBL03\PBL03\bin\Debug\DoAnPBL3.exe
 D:\DoAnPBL03\PBL03\bin\Debug\DoAnPBL3.pdb
@@ -191,3 +168,399 @@ D:\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.CopyComplete
 D:\DoAnPLB03\obj\Debug\DoAnPBL3.exe
 D:\DoAnPLB03\obj\Debug\DoAnPBL3.pdb
 D:\DoAnPLB03\obj\Debug\DoAnPBL3.UINhaHangNhanVien.resources
+C:\Users\ACER\Documents\PBL3\bin\Debug\DoAnPBL3.exe.config
+C:\Users\ACER\Documents\PBL3\bin\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\PBL3\bin\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\PBL3\bin\Debug\EntityFramework.xml
+C:\Users\ACER\Documents\PBL3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ChuyenBan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.DangNhap.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.DatBan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.HoaDon.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.InHoaDon.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.Properties.Resources.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.BanAn.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.ChiTietDatBan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.ChiTietHoaDon.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.GopBan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.KhachHang.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.QuanLyCaTruc.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ThemMonAn.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.ThongKeThucDon.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.UI.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.XemLichSuDatBanAdmin.resources
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.csproj.CopyComplete
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\PBL3\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.exe
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.pdb
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ChuyenBan.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.DangNhap.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.DatBanKH.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.HoaDon.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.InHoaDon.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.Properties.Resources.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.ChiTietDatBan.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.ChiTietHoaDon.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.GopBan.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.KhachHang.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.QuanLyCaTruc.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ThongKeThucDon.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.UI.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.XemLichSuDatBanAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\DoAnPBL3.exe.config
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\DoAnPBL3.exe
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\DoAnPBL3.pdb
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\EntityFramework.xml
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.csproj.CopyComplete
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\EntityFramework.dll
+D:\DoAnPBL03\DoAnPLB03\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.BanAnNhanVien.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.ThucDonAdmin.resources
+D:\DoAnPBL03\DoAnPLB03\obj\Debug\DoAnPBL3.View.ThucDonNhanVien.resources
+D:\DoAnPLB3\bin\Debug\DoAnPBL3.exe.config
+D:\DoAnPLB3\bin\Debug\DoAnPBL3.exe
+D:\DoAnPLB3\bin\Debug\DoAnPBL3.pdb
+D:\DoAnPLB3\bin\Debug\EntityFramework.dll
+D:\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAnPLB3\bin\Debug\EntityFramework.xml
+D:\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangNhap.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.DatBanKH.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDon.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.InHoaDon.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.Properties.Resources.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.BanAnNhanVien.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.KhachHang.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.ThucDonAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThucDonNhanVien.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.UI.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CopyComplete
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.exe
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.pdb
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.LichSuDatBan.resources
+D:\DoAnPLB3\bin\Debug\LiveCharts.dll
+D:\DoAnPLB3\bin\Debug\LiveCharts.WinForms.dll
+D:\DoAnPLB3\bin\Debug\LiveCharts.Wpf.dll
+D:\DoAnPLB3\bin\Debug\LiveCharts.pdb
+D:\DoAnPLB3\bin\Debug\LiveCharts.xml
+D:\DoAnPLB3\bin\Debug\LiveCharts.WinForms.pdb
+D:\DoAnPLB3\bin\Debug\LiveCharts.WinForms.xml
+D:\DoAnPLB3\bin\Debug\LiveCharts.Wpf.pdb
+D:\DoAnPLB3\bin\Debug\LiveCharts.Wpf.xml
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\DoAnPBL3.exe.config
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\EntityFramework.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\EntityFramework.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.pdb
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangNhap.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.DatBanKH.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDon.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.InHoaDon.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.Properties.Resources.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.BanAnNhanVien.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.KhachHang.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.ThucDonAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThucDonNhanVien.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.UI.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.LichSuDatBan.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CopyComplete
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Buffers.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Memory.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Buffers.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Memory.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ACER\Documents\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietCaLamNV.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuanLyLuong.resources
+D:\DoAnPLB3\bin\Debug\BCrypt.Net-Next.dll
+D:\DoAnPLB3\bin\Debug\System.Buffers.dll
+D:\DoAnPLB3\bin\Debug\System.Memory.dll
+D:\DoAnPLB3\bin\Debug\System.Numerics.Vectors.dll
+D:\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DoAnPLB3\bin\Debug\BCrypt.Net-Next.xml
+D:\DoAnPLB3\bin\Debug\System.Buffers.xml
+D:\DoAnPLB3\bin\Debug\System.Memory.xml
+D:\DoAnPLB3\bin\Debug\System.Numerics.Vectors.xml
+D:\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietCaLamNV.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuanLyLuong.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.GUI.XemLuong.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyCaLam.resources
+D:\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuenMatKhau.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\DoAnPBL3.exe.config
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\EntityFramework.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Buffers.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Memory.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\EntityFramework.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.pdb
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Buffers.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Memory.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietCaLamNV.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.DangNhap.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.DatBanKH.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDon.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.InHoaDon.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuenMatKhau.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.GUI.XemLuong.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.Properties.Resources.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.BanAnNhanVien.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.KhachHang.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyCaLam.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuanLyLuong.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.ThucDonAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.ThucDonNhanVien.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.UI.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.LichSuDatBan.resources
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.csproj.CopyComplete
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.exe
+C:\Users\ACER\Documents\Zalo Received Files\DoAnPLB3\obj\Debug\DoAnPBL3.pdb
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.View.QuenMatKhau.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.GUI.XemLuong.resources
+C:\Users\ACER\Documents\DoAnPLB3\obj\Debug\DoAnPBL3.QuanLyCaLam.resources
+D:\PBL03\bin\Debug\DoAnPBL3.exe.config
+D:\PBL03\bin\Debug\DoAnPBL3.exe
+D:\PBL03\bin\Debug\DoAnPBL3.pdb
+D:\PBL03\bin\Debug\BCrypt.Net-Next.dll
+D:\PBL03\bin\Debug\EntityFramework.dll
+D:\PBL03\bin\Debug\EntityFramework.SqlServer.dll
+D:\PBL03\bin\Debug\LiveCharts.dll
+D:\PBL03\bin\Debug\LiveCharts.WinForms.dll
+D:\PBL03\bin\Debug\LiveCharts.Wpf.dll
+D:\PBL03\bin\Debug\System.Buffers.dll
+D:\PBL03\bin\Debug\System.Memory.dll
+D:\PBL03\bin\Debug\System.Numerics.Vectors.dll
+D:\PBL03\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PBL03\bin\Debug\BCrypt.Net-Next.xml
+D:\PBL03\bin\Debug\EntityFramework.xml
+D:\PBL03\bin\Debug\EntityFramework.SqlServer.xml
+D:\PBL03\bin\Debug\LiveCharts.pdb
+D:\PBL03\bin\Debug\LiveCharts.xml
+D:\PBL03\bin\Debug\LiveCharts.WinForms.pdb
+D:\PBL03\bin\Debug\LiveCharts.WinForms.xml
+D:\PBL03\bin\Debug\LiveCharts.Wpf.pdb
+D:\PBL03\bin\Debug\LiveCharts.Wpf.xml
+D:\PBL03\bin\Debug\System.Buffers.xml
+D:\PBL03\bin\Debug\System.Memory.xml
+D:\PBL03\bin\Debug\System.Numerics.Vectors.xml
+D:\PBL03\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PBL03\obj\Debug\DoAnPBL3.csproj.AssemblyReference.cache
+D:\PBL03\obj\Debug\DoAnPBL3.csproj.SuggestedBindingRedirects.cache
+D:\PBL03\obj\Debug\DoAnPBL3.BanAnAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.ChiTietDatMon.resources
+D:\PBL03\obj\Debug\DoAnPBL3.ChiTietHoaDonAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.DangKyCaLam.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.DangNhap.resources
+D:\PBL03\obj\Debug\DoAnPBL3.DoiMatKhau.resources
+D:\PBL03\obj\Debug\DoAnPBL3.HoaDonAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.InHoaDon.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.KhachHang.resources
+D:\PBL03\obj\Debug\DoAnPBL3.QuanLyTaiKhoan.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.QuenMatKhau.resources
+D:\PBL03\obj\Debug\DoAnPBL3.Properties.Resources.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.BanAnNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.QuanLyCaLam.resources
+D:\PBL03\obj\Debug\DoAnPBL3.QuanLyKhachHang.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.QuanLyLuong.resources
+D:\PBL03\obj\Debug\DoAnPBL3.QuanLyNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.ThongKeDoanhThu.resources
+D:\PBL03\obj\Debug\DoAnPBL3.ThongKeKhachHang.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.ThongTinTaiKhoan.resources
+D:\PBL03\obj\Debug\DoAnPBL3.ThucDonAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.ThucDonNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.TrangChuAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.UI.resources
+D:\PBL03\obj\Debug\DoAnPBL3.UINhahangAdmin.resources
+D:\PBL03\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.TrangChuNV.resources
+D:\PBL03\obj\Debug\DoAnPBL3.LichSuDatBan.resources
+D:\PBL03\obj\Debug\DoAnPBL3.csproj.GenerateResource.cache
+D:\PBL03\obj\Debug\DoAnPBL3.csproj.CoreCompileInputs.cache
+D:\PBL03\obj\Debug\DoAnPBL3.csproj.CopyComplete
+D:\PBL03\obj\Debug\DoAnPBL3.exe
+D:\PBL03\obj\Debug\DoAnPBL3.pdb
+D:\PBL03\obj\Debug\DoAnPBL3.View.CaLamViecNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.ChiTietCaLam.resources
+D:\PBL03\obj\Debug\DoAnPBL3.View.QuanLyDatBan.resources
+D:\PBL03\obj\Debug\DoAnPBL3.HoaDonNhanVien.resources
+D:\PBL03\obj\Debug\DoAnPBL3.GUI.XemLuongNhanVien.resources
+D:\DoAnPBL3\bin\Debug\BCrypt.Net-Next.dll
+D:\DoAnPBL3\bin\Debug\EntityFramework.dll
+D:\DoAnPBL3\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAnPBL3\bin\Debug\LiveCharts.dll
+D:\DoAnPBL3\bin\Debug\LiveCharts.WinForms.dll
+D:\DoAnPBL3\bin\Debug\LiveCharts.Wpf.dll
+D:\DoAnPBL3\bin\Debug\System.Buffers.dll
+D:\DoAnPBL3\bin\Debug\System.Memory.dll
+D:\DoAnPBL3\bin\Debug\System.Numerics.Vectors.dll
+D:\DoAnPBL3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DoAnPBL3\bin\Debug\BCrypt.Net-Next.xml
+D:\DoAnPBL3\bin\Debug\LiveCharts.pdb
+D:\DoAnPBL3\bin\Debug\LiveCharts.xml
+D:\DoAnPBL3\bin\Debug\LiveCharts.WinForms.pdb
+D:\DoAnPBL3\bin\Debug\LiveCharts.WinForms.xml
+D:\DoAnPBL3\bin\Debug\LiveCharts.Wpf.pdb
+D:\DoAnPBL3\bin\Debug\LiveCharts.Wpf.xml
+D:\DoAnPBL3\bin\Debug\System.Buffers.xml
+D:\DoAnPBL3\bin\Debug\System.Memory.xml
+D:\DoAnPBL3\bin\Debug\System.Numerics.Vectors.xml
+D:\DoAnPBL3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ChiTietCaLam.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.QuanLyDatBan.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.QuenMatKhau.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyCaLam.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.QuanLyLuong.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.UINhahangNhanVien.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.LichSuDatBan.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyBanAn.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.CaLamViec.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.ChiTietHoaDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyHoaDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.HoaDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.GUI.LuongNhanVien.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.BanAn.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.KhachHang.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.QuanLyThucDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.ThucDon.resources
+D:\DoAnPBL3\obj\Debug\DoAnPBL3.View.TrangChuNhanVien.resources

@@ -18,7 +18,7 @@ namespace DoAnPBL3.DTO
         public string maTK { get; set; }
         public string maPV { get; set; }
         public System.DateTime ngayThanhToan { get; set; }
-        public decimal tongTien { get; set; }
+        public double tongTien { get; set; }
     
         public virtual BANPHUCVU BANPHUCVU { get; set; }
         public virtual TAIKHOAN TAIKHOAN { get; set; }

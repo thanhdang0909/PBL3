@@ -22,8 +22,8 @@ namespace DoAnPBL3.DTO
         public string CCCD { get; set; }
         public string SDT { get; set; }
         public string diaChi { get; set; }
-        public double luong { get; set; }
-        public Nullable<bool> coXoa { get; set; }
+        public double luongTheoGio { get; set; }
+        public bool coXoa { get; set; }
     
         public virtual TAIKHOAN TAIKHOAN { get; set; }
     }

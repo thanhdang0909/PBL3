@@ -14,10 +14,11 @@ namespace DoAnPBL3.DTO
     
     public partial class CHITIETBANPHUCVU
     {
+        public int iD { get; set; }
         public string maPV { get; set; }
         public string maMA { get; set; }
         public int soLuong { get; set; }
-        public decimal giaMA { get; set; }
+        public double giaMA { get; set; }
     
         public virtual BANPHUCVU BANPHUCVU { get; set; }
         public virtual MONAN MONAN { get; set; }

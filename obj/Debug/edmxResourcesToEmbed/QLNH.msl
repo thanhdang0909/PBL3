@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLyNhaHangModelStoreContainer" CdmEntityContainer="QLNH_DB">
+    <EntitySetMapping Name="BANANs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.BANAN">
+        <MappingFragment StoreEntitySet="BANAN">
+          <ScalarProperty Name="maBan" ColumnName="maBan" />
+          <ScalarProperty Name="soGhe" ColumnName="soGhe" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="ghiChu" ColumnName="ghiChu" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANPHUCVUs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.BANPHUCVU">
+        <MappingFragment StoreEntitySet="BANPHUCVU">
+          <ScalarProperty Name="maPV" ColumnName="maPV" />
+          <ScalarProperty Name="maKH" ColumnName="maKH" />
+          <ScalarProperty Name="maTK" ColumnName="maTK" />
+          <ScalarProperty Name="soNguoi" ColumnName="soNguoi" />
+          <ScalarProperty Name="thoiGianVao" ColumnName="thoiGianVao" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHITIETBANPHUCVUs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.CHITIETBANPHUCVU">
+        <MappingFragment StoreEntitySet="CHITIETBANPHUCVU">
+          <ScalarProperty Name="maPV" ColumnName="maPV" />
+          <ScalarProperty Name="maMA" ColumnName="maMA" />
+          <ScalarProperty Name="soLuong" ColumnName="soLuong" />
+          <ScalarProperty Name="giaMA" ColumnName="giaMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHITIETCALAMs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.CHITIETCALAM">
+        <MappingFragment StoreEntitySet="CHITIETCALAM">
+          <ScalarProperty Name="maCT" ColumnName="maCT" />
+          <ScalarProperty Name="ngayLam" ColumnName="ngayLam" />
+          <ScalarProperty Name="gioBatDau" ColumnName="gioBatDau" />
+          <ScalarProperty Name="gioKetThuc" ColumnName="gioKetThuc" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="soLuong" ColumnName="soLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="maHD" ColumnName="maHD" />
+          <ScalarProperty Name="maTK" ColumnName="maTK" />
+          <ScalarProperty Name="maPV" ColumnName="maPV" />
+          <ScalarProperty Name="ngayThanhToan" ColumnName="ngayThanhToan" />
+          <ScalarProperty Name="tongTien" ColumnName="tongTien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="maKH" ColumnName="maKH" />
+          <ScalarProperty Name="tenKH" ColumnName="tenKH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="diemTichLuy" ColumnName="diemTichLuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAIMONs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.LOAIMON">
+        <MappingFragment StoreEntitySet="LOAIMON">
+          <ScalarProperty Name="maLM" ColumnName="maLM" />
+          <ScalarProperty Name="tenLM" ColumnName="tenLM" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONANs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.MONAN">
+        <MappingFragment StoreEntitySet="MONAN">
+          <ScalarProperty Name="maMA" ColumnName="maMA" />
+          <ScalarProperty Name="tenMA" ColumnName="tenMA" />
+          <ScalarProperty Name="maLM" ColumnName="maLM" />
+          <ScalarProperty Name="GiaMA" ColumnName="GiaMA" />
+          <ScalarProperty Name="donViTinh" ColumnName="donViTinh" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="maNV" ColumnName="maNV" />
+          <ScalarProperty Name="maTK" ColumnName="maTK" />
+          <ScalarProperty Name="tenNV" ColumnName="tenNV" />
+          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+          <ScalarProperty Name="ngaySinh" ColumnName="ngaySinh" />
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="luong" ColumnName="luong" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="maTK" ColumnName="maTK" />
+          <ScalarProperty Name="tenDangNhap" ColumnName="tenDangNhap" />
+          <ScalarProperty Name="matKhau" ColumnName="matKhau" />
+          <ScalarProperty Name="vaiTro" ColumnName="vaiTro" />
+          <ScalarProperty Name="coXoa" ColumnName="coXoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CHITIETDATBAN" TypeName="QuanLyNhaHangModel.CHITIETDATBAN" StoreEntitySet="CHITIETDATBAN">
+      <EndProperty Name="BANAN">
+        <ScalarProperty Name="maBan" ColumnName="maBan" />
+      </EndProperty>
+      <EndProperty Name="BANPHUCVU">
+        <ScalarProperty Name="maPV" ColumnName="maPV" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PHANCONGCALAM" TypeName="QuanLyNhaHangModel.PHANCONGCALAM" StoreEntitySet="PHANCONGCALAM">
+      <EndProperty Name="CHITIETCALAM">
+        <ScalarProperty Name="maCT" ColumnName="maCT" />
+      </EndProperty>
+      <EndProperty Name="TAIKHOAN">
+        <ScalarProperty Name="maTK" ColumnName="maTK" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

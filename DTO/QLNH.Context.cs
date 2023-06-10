@@ -29,11 +29,14 @@ namespace DoAnPBL3.DTO
         public virtual DbSet<BANPHUCVU> BANPHUCVUs { get; set; }
         public virtual DbSet<CHITIETBANPHUCVU> CHITIETBANPHUCVUs { get; set; }
         public virtual DbSet<CHITIETCALAM> CHITIETCALAMs { get; set; }
+        public virtual DbSet<CHITIETDATBAN> CHITIETDATBANs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<LOAIMON> LOAIMONs { get; set; }
+        public virtual DbSet<LUONGNHANVIEN> LUONGNHANVIENs { get; set; }
         public virtual DbSet<MONAN> MONANs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
+        public virtual DbSet<PHANCONGCALAM> PHANCONGCALAMs { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }
